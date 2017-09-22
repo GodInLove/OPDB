@@ -16,7 +16,7 @@ TO[3][4]<br/>
 TO[5]<br/>
 `operon_result`<br/>
 <hr>
-<strong>Extensions:</strong>
+<strong>Extensions:</strong><br/>
 [1]considering different sequencing platform: Nextseq500/Illumina HiSeq 2500/Illumina HiSeq 2000 and more<br/>
 [2]considering the quality of the SRA data<br/>
 [3]considering the parameter settings of the software<br/>
