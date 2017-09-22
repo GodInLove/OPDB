@@ -5,7 +5,7 @@ onelink-SRA2OP-DB
 
 <strong>BASIC</strong> V0.0
 <hr>
-FROM	
+FROM  
 `SRA(XXXX)`[1]
 TO
 `fastq-dump (download) (split files)`[6]
