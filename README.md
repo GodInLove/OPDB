@@ -5,6 +5,7 @@ onelink-SRA2OP-DB
 
 <strong>BASIC</strong> V0.0
 <hr>
+
 FROM
 
 SRA(XXXX)[1]
@@ -29,9 +30,9 @@ operon_result
 
 <strong>Extensions:</strong>
 
-	[1]considering different sequencing platform: Nextseq500/Illumina HiSeq 2500/Illumina HiSeq 2000 and more
-	[2]considering the quality of the SRA data 
-	[3]considering the parameter settings of the software
-	[4]considering opting a software artifically or automatically 
-	[5]considering visual programming technology
-	[6]using "split-files" with paired-end data and not using it with single-end data
+[1]considering different sequencing platform: Nextseq500/Illumina HiSeq 2500/Illumina HiSeq 2000 and more
+[2]considering the quality of the SRA data 
+[3]considering the parameter settings of the software
+[4]considering opting a software artifically or automatically 
+[5]considering visual programming technology
+[6]using "split-files" with paired-end data and not using it with single-end data
