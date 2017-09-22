@@ -6,22 +6,25 @@ onelink-SRA2OP-DB
 
 **BASIC** V0.0
 ___
-`FROM`
+FROM
 
-SRA(XXXX)`1`
+`SRA(XXXX)`*1*
 
-`TO`
+TO
 
-fastq-dump(download)(split files)`2`
+`fastq-dump(download)(split files)`*2*
 
-`TO`
+TO
 
-.fastq
-`TO` `3` `4`
+`.fastq`
+
+TO *3* *4*
 
 `rockhopper` | `CONDOP` | `RNAseg`
-`TO`
-operon_result
+
+TO
+
+`operon_result`
 ___
 **Extensions:**
 1. considering different sequencing platform: Nextseq500/Illumina HiSeq 2500/Illumina HiSeq 2000 and more
