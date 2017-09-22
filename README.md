@@ -1,5 +1,3 @@
-onekey-SRA2OP
-
 **BASIC** V0.0
 ___
 FROM
