@@ -3,6 +3,7 @@
 [download the whole package] and decompress it
 
 test: 
+	
 	python SRA2OP_0_0.py SRR5486953
 
 **BASIC** V0.0
