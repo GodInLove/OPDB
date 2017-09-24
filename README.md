@@ -6,6 +6,9 @@ test:
 	
 	python SRA2OP_0_0.py SRR5486953
 
+dependencies:
+1. Java version 1.6
+
 **BASIC** V0.0
 ___
 FROM
