@@ -1,3 +1,10 @@
+### Usage
+
+[download the whole package] and decompress it
+
+test: 
+	python SRA2OP_0_0.py SRR5486953
+
 **BASIC** V0.0
 ___
 FROM
@@ -28,3 +35,4 @@ ___
 5. considering visual programming technology
 6. using "split-files" with paired-end data and not using it with single-end data
 
+[download the whole package]:https://github.com/GodInLove/OPDB.git
