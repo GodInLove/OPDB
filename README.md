@@ -1,16 +1,15 @@
+___
 ### Usage
-
 [download the whole package] and decompress it
 
-test: 
+**test:** 
 	
 	python SRA2OP_0_0.py SRR5486953
 
-dependencies:
+**dependencies:**
 1. Java version 1.6
-
-**BASIC** V0.0
 ___
+**BASIC** V0.0
 FROM
 
 `SRA(XXXX)`*1*
@@ -38,5 +37,12 @@ ___
 4. considering opting a software artifically or automatically
 5. considering visual programming technology
 6. using "split-files" with paired-end data and not using it with single-end data
+___
+**Still cannot resolve it**
+1. the annotion file(`.gff`|`.rnt`|`.ptt`|`.fna`|`.opr`)
+2. the Rscript(How it can work like the bash-shell?For example, `rm *.fna`)
+3. It will not go on to finish its job if there are some bugs,although I have fix some bugs. 
+4. It still cannot automaticlly choose the software(`rockhopper`|`CONDOP`|`RNAseg`)
+5. It still cannot filter the bad SRR data
 
 [download the whole package]:https://github.com/GodInLove/OPDB.git
