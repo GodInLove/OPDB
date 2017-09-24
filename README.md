@@ -7,7 +7,8 @@ ___
 	python SRA2OP_0_0.py SRR5486953
 
 **dependencies:**
-1. Java version 1.6
+1. Java version 1.6 or later
+2. Python 2.7
 ___
 **BASIC** V0.0
 FROM
