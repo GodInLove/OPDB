@@ -3,15 +3,13 @@ srr_n <- Args[1]
 ref <- Args[2]
 output <- Args[3]
 
-library(seqinr)
-library(mclust)
 library(CONDOP)
 library(stringr)
 
 filename <- dir(ref)
-fna <- grep(".fna",filename,TRUE)
-gff <- grep(".gff",filename,TRUE)
-opr <- grep(".opr",filename,TRUE)
+fna <- grep(".fna",x=filename,value=TRUE)
+gff <- grep(".gff",x=filename,value=TRUE)
+opr <- grep(".opr",x=filename,value=TRUE)
 
 ct <- read.csv(paste(output,"/",srr_n,"_count",sep=""),header = TRUE)
 file_genome_annot <- paste(ref,"/",gff,sep="")
