@@ -1,14 +1,22 @@
 Args <- commandArgs(TRUE)
-argv <- Args[1]
+srr_n <- Args[1]
+ref <- Args[2]
+output <- Args[3]
 
 library(seqinr)
 library(mclust)
 library(CONDOP)
+library(stringr)
 
-ct <- read.csv(paste(argv,"_output/",argv,"_count",sep=""),header = TRUE)
-file_genome_annot <- paste(argv,"_ref/.gff",sep="")
-file_operon_annot <- paste(argv,"_ref/.opr",sep="")
-file_fna_annot <- paste(argv,"_ref/.fna",sep="")
+filename <- dir(ref)
+fna <- grep(".fna",filename,TRUE)
+gff <- grep(".gff",filename,TRUE)
+opr <- grep(".opr",filename,TRUE)
+
+ct <- read.csv(paste(output,"/",srr_n,"_count",sep=""),header = TRUE)
+file_genome_annot <- paste(ref,"/",gff,sep="")
+file_operon_annot <- paste(ref,"/",opr,sep="")
+file_fna_annot <- paste(ref,"/",fna,sep="")
 
 data.in <- pre.proc(file_genome_annot,file_operon_annot,file_fna_annot,list.cov.dat = list(ct = ct))
 
