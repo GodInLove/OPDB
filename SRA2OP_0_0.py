@@ -8,25 +8,21 @@ import urllib2
 # Basic V0.0
 
 def usage():
-	print "Useage:python SRA2OP_0_0.py SRR5486953"
+	print "\nUseage:python SRA2OP_0_0.py -i SRR5486953"
+	print "\nOr python SRA2OP_0_0.py -i SRR_number -o output_path -m <int> -p <int> "
+	print "\n-i|--input[string]\tSRRnumber(default:null)"
+	print "\n-o|--output[string]\toutput_dir(default:current dir)"
+	print "\n-m|--method[int]\tchoose the software, (0,1,2) means (rockhopper,CONDOP,RNAseg)(default:0)"
+	print "\n-p|--processor[int]\tset the number of processor(default:4)"
 
 #1.input SRRXXXX and check it
-def checkargv(argv):
+def checksrr_n(srr_n):
 	pat = re.compile(r'[SRA]+[0-9]+')
-	searchobj = re.search(pat,argv)
+	searchobj = re.search(pat,srr_n)
 	if not searchobj:
 		print "wrong SRAnumber!"
 		usage()
 		sys.exit(2)
-
-def mkdir(argv):
-	os.system("mkdir "+argv+"_input")
-	os.system("mkdir "+argv+"_ref")
-	os.system("mkdir "+argv+"_output")
-
-def not_qualified():
-	print "the SRR data is not qualified!"
-	sys.exit(2)
 
 def check_SRR(information):
 	#check whether the SRR data is up to standard or not
@@ -34,6 +30,45 @@ def check_SRR(information):
 		not_qualified()
 	else:
 		pass
+
+def checkprocess_n(process_n):
+	if int(process_n) < 0:
+		print "wrong process number!"
+		usage()
+		sys.exit(2)
+	elif int(process_n) >100:
+		print "wrong process number!"
+		usage()
+		sys.exit(2)
+
+def checkmethod(method):
+	if int(method) < 0:
+		print "wrong method number!"
+		usage()
+		sys.exit(2)
+	elif int(method) > 2:
+		print "wrong method number!"
+		usage()
+		sys.exit(2)
+
+def checkoutput_path(output_path):
+	if len(output_path) > 0:
+		if output_path[-1] != "/":
+			output_path = output_path+"/"
+	return output_path
+
+def mkdir(srr_n,output_path):
+	input_dir = output_path+srr_n+"_input"
+	ref_dir = output_path+srr_n+"_ref"
+	output_dir = output_path+srr_n+"_output"
+	os.system("mkdir "+output_path+srr_n+"_input")
+	os.system("mkdir "+output_path+srr_n+"_ref")
+	os.system("mkdir "+output_path+srr_n+"_output")
+	return [input_dir,ref_dir,output_dir]
+
+def not_qualified():
+	print "the SRR data is not qualified!"
+	sys.exit(2)
 
 #2.figure out something and prepare reference data 
 '''
@@ -44,12 +79,12 @@ figuring out .opr file
 figuring out .gff .rnt .fna .gtf
 '''
 #WRITE a python/R/Perl script to connect NCBI API and get those information
-def getinformation(argv,information):
+def getinformation(srr_n,information):
 	retry = -10
 	while retry < 0:
 		# print retry
 		try:
-			url = 'https://www.ncbi.nlm.nih.gov/sra/?term='+argv+'%5BAll+Fields%5D+AND+"biomol+rna"%5BProperties%5D'
+			url = 'https://www.ncbi.nlm.nih.gov/sra/?term='+srr_n+'%5BAll+Fields%5D+AND+"biomol+rna"%5BProperties%5D'
 			print "open link:\n"+url+"\nplease wait...\n"
 			page = urllib2.urlopen(url,timeout=10)
 			html = page.read()
@@ -57,7 +92,7 @@ def getinformation(argv,information):
 			pat_notfind = re.compile(r'No items found')
 			searchobj = re.search(pat_notfind,html)
 			if searchobj:
-				print "SRA Experiment "+argv+" is not public or not RNA. please change your SRAnumber"
+				print "SRA Experiment "+srr_n+" is not public or not RNA. please change your SRAnumber"
 				sys.exit(2)
 			#find Organism
 			pat_org = re.compile(r'Organism\: \<span\>\<a href\=.*\"\>([a-zA-Z0-9\.\s\-]+).*expand showed sra-full-data')
@@ -84,12 +119,13 @@ def getinformation(argv,information):
 				print "Cannot find the Layout.WHAT happen?the result is",org
 				sys.exit(2)
 			check_SRR(information)
-			f = open(argv+"_information.txt",'w')
-			# print information
-			print "\nNow you can open your workspace, and you will find a file named "+argv+"_information.txt. It stores some BASIC information about your SRR data."
 			for item in information:
-				f.write(item+": "+information[item]+"\n")
-			f.close()
+				print(item+": "+information[item]+"\n")
+			# f = open(srr_n+"_information.txt",'w')
+			# print "\nNow you can open your workspace, and you will find a file named "+srr_n+"_information.txt. It stores some BASIC information about your SRR data."
+			# for item in information:
+			# 	f.write(item+": "+information[item]+"\n")
+			# f.close()
 		except:
 			retry+=1
 			if retry == 0:
@@ -97,12 +133,12 @@ def getinformation(argv,information):
 				sys.exit(2)
 
 #WRITE a python/R/Perl script to connect NCBI API and download the ref.fna ref.gff ref.rnt ref.gtf
-def download_annotion(argv,organism):
+def download_annotion(srr_n,organism,_dir):
 	print "downloading annotion:.gtf .rnt .gff......."
 	# assume that finished it
 	# download the annotion in the ref_dir
-	os.system("cp NC_000913_ref/* "+argv+"_ref/")
-	print organism+"annotion files were downloaded in the "+argv+"_ref"
+	os.system("cp NC_000913_ref/* "+_dir[1])
+	print organism+"annotion files were downloaded in the "+_dir[1]
 
 #WRITE a python/R/Perl script to figure out whether it is paired-end or not
 def paired_or_single(layout):
@@ -116,104 +152,131 @@ def paired_or_single(layout):
 #WRITE a python/R/Perl script to connect DOOR and download the .opr file
 
 #3.download SRR and TO .fastq
-def fastqdump(argv,x):
+def fastqdump(srr_n,x,_dir):
 	# x = 1 means paired-end and x = 0 means single-end
 	if x == 1:
-		print "running....\n./fastq-dump "+argv+" -split-files -O "+argv+"_input/"
-		os.system("./fastq-dump "+argv+" -split-files -O "+argv+"_input/")
+		print "running....\n./fastq-dump "+srr_n+" -split-files -O "+_dir[0]
+		os.system("./fastq-dump "+srr_n+" -split-files -O "+_dir[0])
 	else:
-		print "running....\n./fastq-dump "+argv+" -O "+argv+"_input/"
-		os.system("./fastq-dump "+argv+" -O "+argv+"_input/")
+		print "running....\n./fastq-dump "+srr_n+" -O "+_dir[0]
+		os.system("./fastq-dump "+srr_n+" -O "+_dir[0])
 #4.considering the quality of the FASTQ data
 
 #5.opting a software artifically or automatically
 
 #CHOOSE Rockhopper
-def rockhopper(argv,x,y = 0):
+def rockhopper(srr_n,x,_dir,process_n,y = 0):
 	# x = 1 means paired-end and x = 0 means single-end
 	# y = 1 means need the SAM file
-	os.system("mkdir "+argv+"_output/rockhopper")
+	os.system("mkdir "+_dir[2]+"/rockhopper")
 	print "running Rockhopper...."
 	if y == 0:
 		if x == 1:
-			os.system("java -Xmx4g -cp Rockhopper.jar Rockhopper -g "+argv+"_ref/ "+argv+"_input/"+argv+"_1.fastq%"+argv+"_input/"+argv+"_2.fastq -o "+argv+"_output/rockhopper -TIME")
+			os.system("java -Xmx3g -cp Rockhopper.jar Rockhopper -p "+process_n+" -g "+_dir[1]+" "+_dir[0]+"/"+srr_n+"_1.fastq%"+_dir[0]+"/"+srr_n+"_2.fastq -o "+_dir[2]+"/rockhopper -TIME")
 		else:
-			os.system("java -Xmx4g -cp Rockhopper.jar Rockhopper -g "+argv+"_ref/ "+argv+"_input/"+argv+".fastq -o "+argv+"_output/rockhopper -TIME")
+			os.system("java -Xmx3g -cp Rockhopper.jar Rockhopper -p "+process_n+" -g "+_dir[1]+" "+_dir[0]+"/"+srr_n+".fastq -o "+_dir[2]+"/rockhopper -TIME")
 	else:
 		if x == 1:
-			os.system("java -Xmx4g -cp Rockhopper.jar Rockhopper -g "+argv+"_ref/ "+argv+"_input/"+argv+"_1.fastq%"+argv+"_input/"+argv+"_2.fastq -o "+argv+"_output/rockhopper -TIME -SAM")
-			os.system("mv "+argv+"_output/rockhopper/"+argv+"_1.sam "+argv+"_output/"+argv+".sam ")
+			os.system("java -Xmx3g -cp Rockhopper.jar Rockhopper -p "+process_n+" -g "+_dir[1]+" "+_dir[0]+"/"+srr_n+"_1.fastq%"+_dir[0]+"/"+srr_n+"_2.fastq -o "+_dir[2]+"/rockhopper -TIME -SAM")
+			os.system("mv "+_dir[2]+"/rockhopper/"+srr_n+"_1.sam "+_dir[2]+"/"+srr_n+".sam")
 		else:
-			os.system("java -Xmx4g -cp Rockhopper.jar Rockhopper -g "+argv+"_ref/ "+argv+"_input/"+argv+".fastq -o "+argv+"_output/rockhopper -TIME -SAM")
-			os.system("mv "+argv+"_output/rockhopper/"+argv+".sam "+argv+"_output/"+argv+".sam ")
+			os.system("java -Xmx3g -cp Rockhopper.jar Rockhopper -p "+process_n+" -g "+_dir[1]+" "+_dir[0]+"/"+srr_n+".fastq -o "+_dir[2]+"/rockhopper -TIME -SAM")
+			os.system("mv "+_dir[2]+"/rockhopper/"+srr_n+".sam "+_dir[2]+"/"+srr_n+".sam")
 	#demonstrating the result
-	# os.system("less "+argv+"_output/rockhopper/*operons.txt")
+	# os.system("less "+srr_n+"_output/rockhopper/*operons.txt")
 
-def segemhl(argv,x):
+def segemehl(srr_n,x,_dir,process_n):
 	# output the SAM file
-	os.system("./segemhl.x -t 4 -x ref.idx -d "+argv+"_ref/*.fna")
+	os.system("./segemehl.x -t "+process_n+" -x ref.idx -d "+_dir[1]+"/*.fna")
 	if x == 1:
-		os.system("./segemhl.x -t 4 -i ref.idx -d "+argv+"_ref/*.fna -q "+argv+"_input/"+argv+"_1.fastq -p "+argv+"_input/"+argv+"_2.fastq > "+argv+"_output/"+argv+".sam")
+		os.system("./segemehl.x -t "+process_n+" -i ref.idx -d "+_dir[1]+"/*.fna -q "+_dir[0]+"/"+srr_n+"_1.fastq -p "+_dir[0]+"/"+srr_n+"_2.fastq > "+_dir[2]+"/"+srr_n+".sam")
 	else:
-		os.system("./segemhl.x -t 4 -i ref.idx -d "+argv+"_ref/*.fna -q "+argv+"_input/"+argv+".fastq > "+argv+"_output/"+argv+".sam")
+		os.system("./segemehl.x -t "+process_n+" -i ref.idx -d "+_dir[1]+"/*.fna -q "+_dir[0]+"/"+srr_n+".fastq > "+_dir[2]+"/"+srr_n+".sam")
 	os.system("rm ref.idx")
 
-def samtools(argv):
-	os.system("samtools view -b "+argv+"_output/"+argv+".sam -o "+argv+"_output/"+argv+".bam")
+def samtools(srr_n,_dir):
+	os.system("samtools view -b "+_dir[2]+"/"+srr_n+".sam -o "+_dir[2]+"/"+srr_n+".bam")
 	## reverse
-	os.system("samtools view -h -f 16 "+argv+"_output/"+argv+".bam -o "+argv+"_output/"+argv+"_rev.bam")
+	os.system("samtools view -h -f 16 "+_dir[2]+"/"+srr_n+".bam -o "+_dir[2]+"/"+srr_n+"_rev.bam")
 	## forward
-	os.system("samtools view -h -F 16 "+argv+"_output/"+argv+".bam -o "+argv+"_output/"+argv+"_forw.bam")
+	os.system("samtools view -h -F 16 "+_dir[2]+"/"+srr_n+".bam -o "+_dir[2]+"/"+srr_n+"_forw.bam")
 	## sort
-	os.system("samtools sort -o "+argv+"_output/"+argv+"_rev_sort.bam "+argv+"_output/"+argv+"_rev.bam")
-	os.system("samtools sort -o "+argv+"_output/"+argv+"_forw_sort.bam "+argv+"_output/"+argv+"_forw.bam")
+	os.system("samtools sort -o "+_dir[2]+"/"+srr_n+"_rev_sort.bam "+_dir[2]+"/"+srr_n+"_rev.bam")
+	os.system("samtools sort -o "+_dir[2]+"/"+srr_n+"_forw_sort.bam "+_dir[2]+"/"+srr_n+"_forw.bam")
 	## index
-	os.system("samtools index "+argv+"_output/"+argv+"_rev_sort.bam")
-	os.system("samtools index "+argv+"_output/"+argv+"_forw_sort.bam")
+	os.system("samtools index "+_dir[2]+"/"+srr_n+"_rev_sort.bam")
+	os.system("samtools index "+_dir[2]+"/"+srr_n+"_forw_sort.bam")
 	## count
-	os.system("samtools depth -a "+argv+"_output/"+argv+"_forw_sort.bam "+argv+"_output/"+argv+"_rev_sort.bam > "+argv+"_output/"+argv+"_count")
+	os.system("samtools depth -a "+_dir[2]+"/"+srr_n+"_forw_sort.bam "+_dir[2]+"/"+srr_n+"_rev_sort.bam > "+_dir[2]+"/"+srr_n+"_count")
 #CHOOSE CONDOP
-def CONDOP(argv,x,align = "segemhl"):
+def CONDOP(srr_n,x,_dir,process_n,align = "segemehl"):
 	#align
-	if align == "segemhl":
-		segemhl(argv,x)
+	if align == "segemehl":
+		segemehl(srr_n,x,_dir,process_n)
 	else:
-		rockhopper(argv,x,y=1)
+		rockhopper(srr_n,x,_dir,process_n,y=1)
 	#samtools:conut coverage depth
-	samtools(argv)
-	os.system("python extract_col_3_4.py -i "+argv+"_count -o "+argv+"_table")
-	os.system("Rscript CONDOP_script.R "+argv)
-	os.system("mv COP.CONDOP.txt "+argv+"_output/CONDOP/"+argv+"_operons.txt")
+	samtools(srr_n,_dir)
+	os.system("python extract_col_3_4.py -i "+_dir[2]+"/"+srr_n+"_count -o "+_dir[2]+"/"+srr_n+"_table")
+	os.system("Rscript CONDOP_script.R "+srr_n+" "+_dir[1]+" "+_dir[2])
+	os.system("mv "+_dir[2]+"/COP.CONDOP.txt "+_dir[2]+"/CONDOP/"+srr_n+"_operons.txt")
 	#demonstrating the result
-	os.system("less "+argv+"_output/CONDOP/*operons.txt")
+	os.system("less "+_dir[2]+"/CONDOP/*operons.txt")
 
 #CHOOSE RNAseg
-def RNAseg(argv,x):
-	segemhl(argv,x)
+def RNAseg(srr_n,x,_dir,process_n):
+	segemehl(srr_n,x,_dir,process_n)
 	if x == 0:
-		os.system("python sam2grp.py "+argv+"_output/"+argv+".sam")
-		#os.system("RNAseg -t 8 -f "+argv+"fwd,grp")
+		os.system("python sam2grp.py "+_dir[2]+"/"+srr_n+".sam")
+		#os.system("RNAseg -t 8 -f "+srr_n+"fwd,grp")
 	if x == 1:
 		insert_size = ""
 		print "cannot WRITE the code NOW!\ncannot know the insert_size"
-		# os.system("python sam2grp.py "+argv+"_output/"+argv+".sam "+insert_size)
-		#os.system("RNAseg -t 8 -f "+argv+"fwd,grp")
-
-if __name__ == '__main__':
-	if len(sys.argv)==1:
-		usage()
-	else:
-		arg = sys.argv[1]
-		checkargv(arg)
-		# print "OK"
+		# os.system("python sam2grp.py "+srr_n+"_output/"+srr_n+".sam "+insert_size)
+		#os.system("RNAseg -t 4 -f "+srr_n+"fwd,grp")
+def main(argv):
+	srr_n = ""
+	method = 0
+	process_n = 4
+	output_path = ""
+	try:
+		opts, args = getopt.getopt(argv[1:],"hi:o:m:p:",["help","input=","output=","method=","processor="])
+		for opt,arg in opts:
+			if opt in ("-h","--help"):
+				usage()
+				sys.exit()
+			elif opt in ("-i","--input"):
+				srr_n = arg
+			elif opt in ("-o","--output"):
+				output_path = arg
+			elif opt in ("-m","--method"):
+				method = int(arg)
+			elif opt in ("-p","--processor"):
+				process_n = int(arg)
+		checksrr_n(srr_n)
+		checkmethod(method)
+		checkprocess_n(process_n)
+		output_path = checkoutput_path(output_path)
+		print "OK"
 		information={'Organism':"",'Instrument':"",'Layout':""}
-		getinformation(arg,information)		
+		getinformation(srr_n,information)		
 		x = paired_or_single(information["Layout"])
 		print x
 		# x = 1 means paired-end and x = 0 means single-end
-		mkdir(arg)
-		fastqdump(arg,x)
-		download_annotion(arg,information['Organism'])
-		rockhopper(arg,x)
-		#CONDOP(arg,x)
-		#RNAseg(arg,x)
+		_dir = mkdir(srr_n,output_path)
+		#_dir has 3 dir, input_dir, ref_dir, out_dir
+		fastqdump(srr_n,x,_dir)
+		download_annotion(srr_n,information['Organism'],_dir)
+		if method == 0:
+			rockhopper(srr_n,x,_dir,str(process_n))
+		elif method == 1:
+			CONDOP(srr_n,x,_dir,str(process_n))
+		elif method == 2:
+			pass
+			#RNAseg(srr_n,x,_dir,str(process_n))
+	except getopt.GetoptError:
+		usage()
+		sys.exit(2)
+
+if __name__ == '__main__':
+	main(sys.argv)
