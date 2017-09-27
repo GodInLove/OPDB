@@ -11,7 +11,7 @@ fna <- grep(".fna",x=filename,value=TRUE)
 gff <- grep(".gff",x=filename,value=TRUE)
 opr <- grep(".opr",x=filename,value=TRUE)
 
-ct <- read.csv(paste(output,"/",srr_n,"_count",sep=""),header = TRUE)
+ct <- read.csv(paste(output,"/",srr_n,"_table",sep=""),header = TRUE)
 file_genome_annot <- paste(ref,"/",gff,sep="")
 file_operon_annot <- paste(ref,"/",opr,sep="")
 file_fna_annot <- paste(ref,"/",fna,sep="")

@@ -149,7 +149,7 @@ def paired_or_single(layout):
 	else:
 		return 0
 
-#WRITE a python/R/Perl script to connect DOOR and download the .opr file
+
 
 #3.download SRR and TO .fastq
 def fastqdump(srr_n,x,_dir):
@@ -218,6 +218,7 @@ def CONDOP(srr_n,x,_dir,process_n,align = "segemehl"):
 	#samtools:conut coverage depth
 	samtools(srr_n,_dir)
 	os.system("python extract_col_3_4.py -i "+_dir[2]+"/"+srr_n+"_count -o "+_dir[2]+"/"+srr_n+"_table")
+	os.system("rm "+_dir[2]+"/"+srr_n+"_count")
 	os.system("Rscript CONDOP_script.R "+srr_n+" "+_dir[1]+" "+_dir[2])
 	os.system("mv "+_dir[2]+"/COP.CONDOP.txt "+_dir[2]+"/CONDOP/"+srr_n+"_operons.txt")
 	#demonstrating the result
@@ -270,6 +271,8 @@ def main(argv):
 		if method == 0:
 			rockhopper(srr_n,x,_dir,str(process_n))
 		elif method == 1:
+			#WRITE a python/R/Perl script to connect DOOR and download the .opr file
+			os.system("python download_opr.py "+information['Organism']+" "+_dir[1])
 			CONDOP(srr_n,x,_dir,str(process_n))
 		elif method == 2:
 			pass
