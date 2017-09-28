@@ -4,6 +4,7 @@ ref <- Args[2]
 output <- Args[3]
 
 library(CONDOP)
+library(mclust)
 library(stringr)
 
 filename <- dir(ref)
