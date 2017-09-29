@@ -4,7 +4,7 @@ ___
 
 **test:** 
 	
-	python SRA2OP_0_0.py SRR5486953
+	python SRA2OP_0_0.py -i SRR5486953 -o /home/lyd/Desktop -m 1 -n NC_000913
 
 **dependencies:**
 1. Java version 1.6 or later
