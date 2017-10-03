@@ -4,7 +4,8 @@ ___
 
 **test:** 
 	
-	python SRA2OP_0_0.py -i SRR5486953 -o /home/lyd/Desktop -m 1 -n NC_000913
+	python main.py -i SRR5486953 -o /home/lyd/Desktop -m 1 -n NC_000913
+	python main.py -h
 
 **dependencies:**
 1. Java version 1.6 or later
@@ -13,17 +14,17 @@ ___
 **BASIC** V0.0
 FROM
 
-`SRA(XXXX)`*1*
+`SRA(XXXX)`
 
 TO
 
-`fastq-dump(download)(split files)`*2*
+`fastq-dump(download)(split files)`
 
 TO
 
 `.fastq`
 
-TO *3* *4*
+TO
 
 `rockhopper` | `CONDOP` | `RNAseg`
 
@@ -37,7 +38,7 @@ ___
 3. offer the options to choose the software and processor number.
 ___
 **Still cannot resolve it**
-1. the annotion file(`.gff`|`.rnt`|`.ptt`|`.fna`|`.opr`)
+1. the annotion file(`.gff`|`.rnt`|`.ptt`|`.fna`)
 2. It will not go on to finish its job if there are some bugs,although I have fix some bugs. 
 3. I have not yet tested the software called RNAseg because It took too much memory size.
 4. It still cannot filter the bad SRR data

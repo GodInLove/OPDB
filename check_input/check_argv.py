@@ -4,13 +4,13 @@ import sys
 
 
 def usage():
-    print("\nUseage:python SRA2OP_0_0.py -i SRR5486953")
-    print("\nOr python SRA2OP_0_0.py -i SRR_number -o output_path -m <int> -p <int> ")
+    print("\nUseage:python SRA2OP_0_0.py -i SRR5486953 -o /home/lyd/Desktop -m 1 -n NC_000913")
+    print("\nOr python SRA2OP_0_0.py -i SRR_number -o output_path -m <int> -p <int> -n <string>")
     print("\n-i|--input[string]\tSRRnumber(default:null)")
     print("\n-o|--output[string]\toutput_dir(default:current dir)")
     print("\n-m|--method[int]\tchoose the software, (0,1,2) means (rockhopper,CONDOP,RNAseg)(default:0)")
     print("\n-p|--processor[int]\tset the number of processor(default:4)")
-    print("\n-n|--NC_number[string]\tset the NC_number of organism,like NC_000913(default:null)")
+    print("\n-n|--keggID[string]\tset the keggID of organism,like eco(default:null)")
 
 
 def checksrr_n(srr_n):
@@ -22,11 +22,11 @@ def checksrr_n(srr_n):
         sys.exit(2)
 
 
-def checknc_n(nc_n):
-    pat = re.compile(r'NC\_[0-9]+')
-    searchobj = re.search(pat, nc_n)
+def checknc_n(kegg_id):
+    pat = re.compile(r'[A-Za-z]{3}')
+    searchobj = re.search(pat, kegg_id)
     if not searchobj:
-        print("wrong NC_number!")
+        print("wrong kegg_id!")
         usage()
         sys.exit(2)
 
@@ -67,9 +67,9 @@ def checkoutput_path(output_path):
     return output_path
 
 
-def check_args(srr_n, nc_n, process_n, method, output_path):
+def check_args(srr_n, kegg_id, process_n, method, output_path):
     checkmethod(method)
-    checknc_n(nc_n)
+    checknc_n(kegg_id)
     checkprocess_n(process_n)
     output_path = checkoutput_path(output_path)
     checksrr_n(srr_n)

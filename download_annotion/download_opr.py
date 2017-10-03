@@ -3,7 +3,19 @@ import urllib.request
 import sys
 
 
-def download_opr(nc_n, ref_path):
+def download_opr(kegg_id, ref_path):
+    url_kegg = "http://www.genome.jp/kegg-bin/show_organism?org=" + kegg_id
+    print("search in the kegg database\n")
+    req = urllib.request.Request(url_kegg)
+    response = urllib.request.urlopen(req)
+    html = response.read()
+    html = html.decode('utf-8')
+    pat = re.compile("\>(NC\_[0-9]+)\<")
+    result_kegg = re.findall(pat,html)
+    if len(result_kegg) == 0:
+        print("the keggID has not a NC_number")
+        sys.exit(2)
+    nc_n = result_kegg[0]
     root_url = "http://csbl.bmb.uga.edu/DOOR/"
     # browser search string
     try:
@@ -37,7 +49,7 @@ def download_opr(nc_n, ref_path):
         html = html.decode('gbk')
         pat2 = re.compile(r'\<li\>\<a\shref\=\"(.*)\".*\<\/li\>\s+\<li\>\<a\shref\=\"operon\.php\?id\=')
         result2 = re.findall(pat2, html)
-        if not result2:
+        if len(result2) == 0:
             print("cannot find the url,please contact with the author")
         url2 = root_url + result2[0]
         print("search in the DOOR database,please wait...\n")
@@ -47,7 +59,7 @@ def download_opr(nc_n, ref_path):
         html = html.decode('gbk')
         pat3 = re.compile(r'window\.location\=\'(downloadNCoperon.php.*)\'\"\svalue\=\"Download\soperon\stable\"\>')
         result3 = re.findall(pat3, html)
-        if not result3:
+        if len(result3) == 0:
             print("cannot find the url,please contact with the author")
         url_download = root_url + result3[0]
         pat_nc = re.compile(r'[0-9]+')
@@ -55,6 +67,7 @@ def download_opr(nc_n, ref_path):
         local = ref_path + "/" + result[0] + ".opr"
         print("starting download the .opr file,please wait...\n")
         urllib.request.urlretrieve(url_download, local)
+        print("NC_number:" + nc_n + " , its opr files were downloaded in the " + ref_path+ "\n")
     except:
-        print("wrong!!Cannot connect DOOR")
+        print("wrong!!",sys.exc_info()[0])
         sys.exit(2)

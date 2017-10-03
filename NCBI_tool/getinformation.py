@@ -50,7 +50,7 @@ def getinformation(srr_n, information):
         # 	f.write(item+": "+information[item]+"\n")
         # f.close()
     except:
-        print("wrong!!Cannot connect NCBI")
+        print("wrong!!",sys.exc_info()[0])
         sys.exit(2)
 
 
