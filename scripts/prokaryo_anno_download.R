@@ -23,13 +23,21 @@ if (!dir.exists(saveFolder)) {
 ## download gff and feature_table files
 download.SpeAnno(kegg_id, 'gff', saveFolder)
 download.SpeAnno(kegg_id, 'feature_table', saveFolder)
+download.SpeAnno(kegg_id, '[^from]_genomic.fna', saveFolder)
 files <- dir(saveFolder, full.names = TRUE)
 
+
+## extract the fna file as 'eco.fna'
+files %>%
+  grepl('[^from]_genomic.fna', .) %>%
+  `[`(files, .) %>%
+  paste0('zcat ', ., ' > ', file.path(saveFolder, paste(kegg_id,".fna",sep=""))) %>%
+  system
 ## extract the gff file as 'eco.gff'
 files %>%
   grepl('gff', .) %>%
   `[`(files, .) %>%
-  paste0('zcat ', ., ' > ', file.path(saveFolder, 'eco.gff')) %>%
+  paste0('zcat ', ., ' > ', file.path(saveFolder, paste(kegg_id,".gff",sep=""))) %>%
   system
 
 ## extract ptt files as 'eco.ptt'
@@ -43,9 +51,9 @@ ft <- files %>%
 
 ft %>%
   ExtractPtt %>%
-  write.ptt(file.path(saveFolder, 'eco.ptt'))
+  write.ptt(file.path(saveFolder, paste(kegg_id,".ptt",sep="")))
 
 ft %>%
   ExtractRnt %>%
-  write.rnt(file.path(saveFolder, 'eco.rnt'))
+  write.rnt(file.path(saveFolder, paste(kegg_id,".rnt",sep="")))
   

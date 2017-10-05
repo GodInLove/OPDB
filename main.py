@@ -79,8 +79,7 @@ def main(argv):
             CONDOP_operon_predict(srr_n, x, _dir, str(process_n))
             pass
         elif method == 2:
-            pass
-            # RNAseg_operon_predict(srr_n, x, _dir, str(process_n))
+            RNAseg_operon_predict(srr_n, x, _dir, str(process_n))
     except getopt.GetoptError:
         usage()
         sys.exit(0)

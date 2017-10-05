@@ -10,26 +10,26 @@ import re
 
 def download_annotion(kegg_id, ref_path):
     print("\ndownloading annotion:.gtf .rnt .gff.......\n")
-    # assume that finished it
-    # download the annotion in the ref_dir
-    url = "http://www.genome.jp/kegg-bin/show_organism?org=" + kegg_id
-    print("search in the kegg database\n")
-    req = urllib.request.Request(url)
-    response = urllib.request.urlopen(req)
-    html = response.read()
-    html = html.decode('utf-8')
-    pat1 = re.compile("(ftp\:\/\/ftp\.ncbi\.nlm\.nih\.gov\/[a-z\/A-Z0-9\_\.]+)")
-    result = re.findall(pat1, html)
-    if len(result) == 0:
-        print("not find the data.please check your input keggID")
-    # found the download urls
-    name = result[0].split("/")[-1]
-    url_download = result[0] + "/" + name
-    # fna files download
-    url_fna = url_download + "_genomic.fna.gz"
-    local_fna = ref_path + "/" + kegg_id + ".fna.gz"
-    urllib.request.urlretrieve(url_fna, local_fna)
-    os.system("gzip -d "+ local_fna)
+    # # assume that finished it
+    # # download the annotion in the ref_dir
+    # url = "http://www.genome.jp/kegg-bin/show_organism?org=" + kegg_id
+    # print("search in the kegg database\n")
+    # req = urllib.request.Request(url)
+    # response = urllib.request.urlopen(req)
+    # html = response.read()
+    # html = html.decode('utf-8')
+    # pat1 = re.compile("(ftp\:\/\/ftp\.ncbi\.nlm\.nih\.gov\/[a-z\/A-Z0-9\_\.]+)")
+    # result = re.findall(pat1, html)
+    # if len(result) == 0:
+    #     print("not find the data.please check your input keggID")
+    # # found the download urls
+    # name = result[0].split("/")[-1]
+    # url_download = result[0] + "/" + name
+    # # fna files download
+    # url_fna = url_download + "_genomic.fna.gz"
+    # local_fna = ref_path + "/" + kegg_id + ".fna.gz"
+    # urllib.request.urlretrieve(url_fna, local_fna)
+    # os.system("gzip -d "+ local_fna)
     # # gff files download
     # url_gff = url_download + "_genomic.gff.gz"
     # local_gff = ref_path + "/" + kegg_id + ".gff.gz"
