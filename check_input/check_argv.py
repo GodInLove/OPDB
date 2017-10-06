@@ -10,7 +10,7 @@ def usage():
     print("\n-o|--output[string]\toutput_dir(default:current dir)")
     print("\n-m|--method[int]\tchoose the software, (0,1,2) means (rockhopper,CONDOP,RNAseg)(default:0)")
     print("\n-p|--processor[int]\tset the number of processor(default:4)")
-    print("\n-n|--keggID[string]\tset the keggID of organism,like eco(default:null)")
+    print("\n-k|--keggID[string]\tset the keggID of organism,like eco(default:null)")
 
 
 def checksrr_n(srr_n):

@@ -6,6 +6,7 @@ from format_handle.extract_col import extract_Synonym
 
 
 def rockhopper_operon_predict(srr_n, x, _dir, process_n):
+    os.system("rm " + _dir[1] + "/*.gff")
     # x = 1 means paired-end and x = 0 means single-end
     os.system("mkdir " + _dir[2] + "/rockhopper")
     print("running Rockhopper....")

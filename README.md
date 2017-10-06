@@ -4,7 +4,7 @@ ___
 
 **test:** 
 	
-	python main.py -i SRR5486953 -o /home/lyd/Desktop -m 1 -n NC_000913
+	python main.py -i SRR5486953 -o /home/lyd/Desktop -m 1 -k eco
 	python main.py -h
 
 **dependencies:**

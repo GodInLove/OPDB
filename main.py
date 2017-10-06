@@ -14,26 +14,26 @@ from operon_prediction_tool.rockhopper import rockhopper_operon_predict
 
 
 def makedir(srr_n, output_path):
-    status = 0
     input_dir = output_path + srr_n + "_input"
     ref_dir = output_path + srr_n + "_ref"
     output_dir = output_path + srr_n + "_output"
     if not os.path.exists(input_dir):
+        switch_1 = 0
         os.system("mkdir " + input_dir)
     else:
-        status = 1
+        switch_1 = 1
         print("\nthe file exists.\n")
     if not os.path.exists(ref_dir):
+        switch_2 = 0
         os.system("mkdir " + ref_dir)
     else:
-        status = 1
+        switch_2 = 1
         print("\nthe file exists.\n")
     if not os.path.exists(output_dir):
         os.system("mkdir " + output_dir)
     else:
-        status = 1
         print("\nthe file exists.\n")
-    return [input_dir, ref_dir, output_dir, status]
+    return [input_dir, ref_dir, output_dir, switch_1, switch_2]
 
 
 def main(argv):
@@ -69,9 +69,9 @@ def main(argv):
         # _dir has 3 dir, input_dir, ref_dir, out_dir
         if _dir[3] == 0:
             sra2fastq(srr_n, x, _dir[0])
+        if _dir[4] == 0:
             download_annotion(kegg_id, _dir[1])
         if method == 0:
-            os.system("rm "+_dir[1]+"/*.gff")
             rockhopper_operon_predict(srr_n, x, _dir, str(process_n))
         elif method == 1:
             # WRITE a python/R/Perl script to connect DOOR and download the .opr file
