@@ -4,7 +4,7 @@ import sys
 
 
 def usage():
-    print("\nUseage:python SRA2OP_0_0.py -i SRR5486953 -o /home/lyd/Desktop -m 1 -n NC_000913")
+    print("\nUseage:python SRA2OP_0_0.py -i SRR5486953 -o /home/lyd/Desktop -m 1 -k eco")
     print("\nOr python SRA2OP_0_0.py -i SRR_number -o output_path -m <int> -p <int> -n <string>")
     print("\n-i|--input[string]\tSRRnumber(default:null)")
     print("\n-o|--output[string]\toutput_dir(default:current dir)")

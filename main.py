@@ -36,6 +36,13 @@ def makedir(srr_n, output_path):
     return [input_dir, ref_dir, output_dir, switch_1, switch_2]
 
 
+def test(srr_n, input_path):
+    os.system("mv " + input_path + "/" + srr_n + ".fastq " + input_path + "/" + srr_n + "_download.fastq")
+    os.system(
+        "tools/seqtk sample -s100 " + input_path + "/" + srr_n + "_download.fastq 10000 > " + input_path + "/" + srr_n + ".fastq")
+    os.system("rm " + input_path + "/" + srr_n + "_download.fastq")
+
+
 def main(argv):
     srr_n = ""
     method = 0
@@ -69,6 +76,7 @@ def main(argv):
         # _dir has 3 dir, input_dir, ref_dir, out_dir
         if _dir[3] == 0:
             sra2fastq(srr_n, x, _dir[0])
+            test(srr_n, _dir[0])
         if _dir[4] == 0:
             download_annotion(kegg_id, _dir[1])
         if method == 0:
