@@ -22,24 +22,24 @@ def makedir(srr_n, output_path):
         os.system("mkdir " + input_dir)
     else:
         switch_1 = 1
-        print("\nthe file exists.\n")
+        print("\n"+input_dir+"\tthe dir exists.\n")
     if not os.path.exists(ref_dir):
         switch_2 = 0
         os.system("mkdir " + ref_dir)
     else:
         switch_2 = 1
-        print("\nthe file exists.\n")
+        print("\n" + ref_dir + "\tthe dir exists.\n")
     if not os.path.exists(output_dir):
         os.system("mkdir " + output_dir)
     else:
-        print("\nthe file exists.\n")
+        print("\n" + output_dir + "\tthe dir exists.\n")
     return [input_dir, ref_dir, output_dir, switch_1, switch_2]
 
 
 def test(srr_n, input_path):
     os.system("mv " + input_path + "/" + srr_n + ".fastq " + input_path + "/" + srr_n + "_download.fastq")
     os.system(
-        "tools/seqtk sample -s100 " + input_path + "/" + srr_n + "_download.fastq 10000 > " + input_path + "/" + srr_n + ".fastq")
+        "tools/seqtk sample -s11 " + input_path + "/" + srr_n + "_download.fastq 10000 > " + input_path + "/" + srr_n + ".fastq")
     os.system("rm " + input_path + "/" + srr_n + "_download.fastq")
 
 
@@ -76,7 +76,7 @@ def main(argv):
         # _dir has 3 dir, input_dir, ref_dir, out_dir
         if _dir[3] == 0:
             sra2fastq(srr_n, x, _dir[0])
-            # test(srr_n, _dir[0])
+            test(srr_n, _dir[0])
         if _dir[4] == 0:
             download_annotion(kegg_id, _dir[1])
         if method == 0:
