@@ -76,7 +76,7 @@ def main(argv):
         # _dir has 3 dir, input_dir, ref_dir, out_dir
         if _dir[3] == 0:
             sra2fastq(srr_n, x, _dir[0])
-            test(srr_n, _dir[0])
+            # test(srr_n, _dir[0])
         if _dir[4] == 0:
             download_annotion(kegg_id, _dir[1])
         if method == 0:
