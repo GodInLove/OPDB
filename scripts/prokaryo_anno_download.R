@@ -37,7 +37,7 @@ files %>%
 files %>%
   grepl('gff', .) %>%
   `[`(files, .) %>%
-  paste0('zcat ', ., ' > ', file.path(saveFolder, paste(kegg_id,".gff",sep=""))) %>%
+  paste0('zcat ', ., ' > ', file.path(saveFolder, paste(kegg_id,"_orgin.gff",sep=""))) %>%
   system
 
 ## extract ptt files as 'eco.ptt'
