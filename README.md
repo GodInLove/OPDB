@@ -36,13 +36,13 @@ ___
 1. get the information about different sequencing platform: Nextseq500/Illumina HiSeq 2500/Illumina HiSeq 2000 and more
 2. get the information about layout:PAIRED-END or SINGLE-END, then automaticlly set the pramater. 
 3. offer the options to choose the software and processor number.
+1. get annotation files automatically
 ___
 **Still cannot resolve it**
-1. the annotion file(`.gff`|`.rnt`|`.ptt`|`.fna`)
-2. It will not go on to finish its job if there are some bugs,although I have fix some bugs. 
-3. I have not yet tested the software called RNAseg because It took too much memory size.
-4. It still cannot filter the bad SRR data
-5. It did not filter the fastq file which had bad quality.
-6. It is time to consider visual programming technology
+1. It will not go on to finish its job if there are some bugs,although I have fix some bugs.
+2. I have not yet tested the software called RNAseg because It took too much memory size.
+3. It still cannot filter the bad SRR data
+4. It did not filter the fastq file which had bad quality.
+5. It is time to consider visual programming technology
 
 [download the whole package]:https://github.com/GodInLove/OPDB.git
