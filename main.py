@@ -89,9 +89,6 @@ def main(argv):
             rockhopper_operon_predict(srr_n, x, _dir, str(process_n))
             visual(_dir, kegg_id)
             res2jbrowse(_dir[5])
-            os.system("mkdir /home/lyd/Desktop/" + srr_n)
-            os.system("mv data /home/lyd/Desktop/" + srr_n)
-            os.system("cp -r /home/lyd/Desktop/" + srr_n+"/data /home/lyd/Desktop/train_new/web/JBrowse/")
         elif method == 1:
             # WRITE a python/R/Perl script to connect DOOR and download the .opr file
             download_opr(kegg_id, _dir[1])
