@@ -8,6 +8,7 @@ from NCBI_tool.getinformation import getinformation, paired_or_single
 from check_input.check_argv import usage, check_args
 from download_annotion.download_annot import download_annotion
 from download_annotion.download_opr import download_opr
+from format_handle.result2jbrowse import visual, res2jbrowse
 from operon_prediction_tool.CONDOP import CONDOP_operon_predict
 from operon_prediction_tool.RNAseg import RNAseg_operon_predict
 from operon_prediction_tool.rockhopper import rockhopper_operon_predict
@@ -48,13 +49,6 @@ def test(srr_n, input_path):
     os.system("rm " + input_path + "/" + srr_n + "_download.fastq")
 
 
-def visual(_dir, kegg_id):
-    os.system("cp " + _dir[1] + "/" + kegg_id + ".fna " + _dir[5] + "/" + kegg_id + ".fna")
-    os.system("cp " + _dir[1] + "/" + kegg_id + "_orgin.gff " + _dir[5] + "/" + kegg_id + ".gff")
-    os.system("rm " + _dir[2] + "/rockhopper/genomeBrowserFiles/" + "_diff*")
-    os.system("cp " + _dir[2] + "/rockhopper/genomeBrowserFiles/" + "*.wig " + _dir[5] + "/")
-
-
 def main(argv):
     srr_n = ""
     method = 0
@@ -93,14 +87,18 @@ def main(argv):
             download_annotion(kegg_id, _dir[1])
         if method == 0:
             rockhopper_operon_predict(srr_n, x, _dir, str(process_n))
-            visual(_dir,kegg_id)
+            visual(_dir, kegg_id)
+            res2jbrowse(_dir[5])
+            os.system("mkdir /home/lyd/Desktop/" + srr_n)
+            os.system("mv data /home/lyd/Desktop/" + srr_n)
+            os.system("cp -r /home/lyd/Desktop/" + srr_n+"/data /home/lyd/webapps/JBrowse/")
         elif method == 1:
             # WRITE a python/R/Perl script to connect DOOR and download the .opr file
             download_opr(kegg_id, _dir[1])
             CONDOP_operon_predict(srr_n, x, _dir, str(process_n))
-            pass
         elif method == 2:
-            RNAseg_operon_predict(srr_n, x, _dir, str(process_n))
+            pass
+            # RNAseg_operon_predict(srr_n, x, _dir, str(process_n))
     except getopt.GetoptError:
         usage()
         sys.exit(0)

@@ -17,7 +17,7 @@ def CONDOP_operon_predict(srr_n, x, _dir, process_n, align="segemehl"):
     extract_3_4(_dir[2] + "/" + srr_n + "_count", _dir[2] + "/" + srr_n + "_table")
     os.system("rm " + _dir[2] + "/" + srr_n + "_count")
     os.system("mkdir " + _dir[2] + "/CONDOP")
-    os.system("Rscript scripts/CONDOP_script.R " + srr_n + " " + _dir[1] + " " + _dir[2])
+    os.system("Rscript scripts/bin/CONDOP_script.R " + srr_n + " " + _dir[1] + " " + _dir[2])
     extract_some(_dir[2] + "/CONDOP/" + "COP.CONDOP.1.txt",_dir[2] + "/CONDOP/" + srr_n + "_operons.txt")
     print("Operons written to file:\t" + _dir[2] + "/CONDOP/" + srr_n + "_operon.txt")
     # os.system("rm "+_dir[2] + "/COP.CONDOP.txt")

@@ -49,5 +49,5 @@ def download_annotion(kegg_id, ref_path):
     local_feature = ref_path + "/" + kegg_id + "_feature.txt.gz"
     urllib.request.urlretrieve(url_feature, local_feature)
     os.system("gzip -d " + local_feature)
-    os.system("Rscript scripts/prokaryo_anno_download.R "+kegg_id+" "+ref_path)
+    os.system("Rscript scripts/bin/prokaryo_anno_download.R "+kegg_id+" "+ref_path)
     print("keggID:" + kegg_id + " , its annotion files were downloaded in the " + ref_path + "\n")
