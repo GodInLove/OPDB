@@ -17,12 +17,13 @@ def makedir(srr_n, output_path):
     input_dir = output_path + srr_n + "_input"
     ref_dir = output_path + srr_n + "_ref"
     output_dir = output_path + srr_n + "_output"
+    dir = output_path + srr_n
     if not os.path.exists(input_dir):
         switch_1 = 0
         os.system("mkdir " + input_dir)
     else:
         switch_1 = 1
-        print("\n"+input_dir+"\tthe dir exists.\n")
+        print("\n" + input_dir + "\tthe dir exists.\n")
     if not os.path.exists(ref_dir):
         switch_2 = 0
         os.system("mkdir " + ref_dir)
@@ -33,7 +34,11 @@ def makedir(srr_n, output_path):
         os.system("mkdir " + output_dir)
     else:
         print("\n" + output_dir + "\tthe dir exists.\n")
-    return [input_dir, ref_dir, output_dir, switch_1, switch_2]
+    if not os.path.exists(dir):
+        os.system("mkdir " + dir)
+    else:
+        print("\n" + output_dir + "\tthe dir exists.\n")
+    return [input_dir, ref_dir, output_dir, switch_1, switch_2, dir]
 
 
 def test(srr_n, input_path):
@@ -41,6 +46,13 @@ def test(srr_n, input_path):
     os.system(
         "tools/seqtk sample -s11 " + input_path + "/" + srr_n + "_download.fastq 10000 > " + input_path + "/" + srr_n + ".fastq")
     os.system("rm " + input_path + "/" + srr_n + "_download.fastq")
+
+
+def visual(_dir, kegg_id):
+    os.system("cp " + _dir[1] + "/" + kegg_id + ".fna " + _dir[5] + "/" + kegg_id + ".fna")
+    os.system("cp " + _dir[1] + "/" + kegg_id + "_orgin.gff " + _dir[5] + "/" + kegg_id + ".gff")
+    os.system("rm " + _dir[2] + "/rockhopper/genomeBrowserFiles/" + "_diff*")
+    os.system("cp " + _dir[2] + "/rockhopper/genomeBrowserFiles/" + "*.wig " + _dir[5] + "/")
 
 
 def main(argv):
@@ -81,6 +93,7 @@ def main(argv):
             download_annotion(kegg_id, _dir[1])
         if method == 0:
             rockhopper_operon_predict(srr_n, x, _dir, str(process_n))
+            visual(_dir,kegg_id)
         elif method == 1:
             # WRITE a python/R/Perl script to connect DOOR and download the .opr file
             download_opr(kegg_id, _dir[1])
