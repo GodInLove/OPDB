@@ -9,7 +9,7 @@ def visual(_dir, kegg_id):
 
 
 def res2jbrowse(_dir):
-    os.system("scripts/bin/prepare-refseqs.pl --fasta " + _dir + "/*.fna")
-    os.system("scripts/bin/flatfile-to-json.pl --gff " + _dir + "/*.gff --trackType CanvasFeatures --trackLabel gff")
-    os.system("scripts/bin/generate-names.pl -v")
-    os.system("for item in " + _dir + "/*wig;do scripts/bin/wig-to-json.pl --wig $item --tracklabel ${item##*_};done")
+    os.system("/home/lyd/Desktop/train_new/web/JBrowse/bin/prepare-refseqs.pl --fasta " + _dir + "/*.fna")
+    os.system("/home/lyd/Desktop/train_new/web/JBrowse/bin/flatfile-to-json.pl --gff " + _dir + "/*.gff --trackType CanvasFeatures --trackLabel gff")
+    os.system("/home/lyd/Desktop/train_new/web/JBrowse/bin/generate-names.pl -v")
+    os.system("for item in " + _dir + "/*wig;do /home/lyd/Desktop/train_new/web/JBrowse/bin/wig-to-json.pl --wig $item --tracklabel ${item##*_};done")
