@@ -82,7 +82,7 @@ def main(argv):
         # _dir has 3 dir, input_dir, ref_dir, out_dir
         if _dir[3] == 0:
             sra2fastq(srr_n, x, _dir[0])
-            test(srr_n, _dir[0])
+            #test(srr_n, _dir[0])
         if _dir[4] == 0:
             download_annotion(kegg_id, _dir[1])
         if method == 0:
@@ -91,7 +91,7 @@ def main(argv):
             res2jbrowse(_dir[5])
             os.system("mkdir /home/lyd/Desktop/" + srr_n)
             os.system("mv data /home/lyd/Desktop/" + srr_n)
-            os.system("cp -r /home/lyd/Desktop/" + srr_n+"/data /home/lyd/webapps/JBrowse/")
+            os.system("cp -r /home/lyd/Desktop/" + srr_n+"/data /home/lyd/Desktop/train_new/web/JBrowse/")
         elif method == 1:
             # WRITE a python/R/Perl script to connect DOOR and download the .opr file
             download_opr(kegg_id, _dir[1])

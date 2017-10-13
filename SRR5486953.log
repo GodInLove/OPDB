@@ -1,0 +1,78 @@
+Read 7154486 spots for SRR5486953
+Written 7154486 spots for SRR5486953
+
+Aligning sequencing reads from file:	SRR5486953.fastq
+Total reads:            	7154486
+Successfully aligned reads:	6285549	88%	(>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete genome)
+	Aligning (sense) to protein-coding genes:	8%
+	Aligning (antisense) to protein-coding genes:	8%
+	Aligning (sense) to ribosomal RNAs:	0%
+	Aligning (antisense) to ribosomal RNAs:	0%
+	Aligning (sense) to transfer RNAs:	0%
+	Aligning (antisense) to transfer RNAs:	0%
+	Aligning (sense) to miscellaneous RNAs:	41%
+	Aligning (antisense) to miscellaneous RNAs:	42%
+	Aligning to unannotated regions:        	1%
+
+Analyzing transcripts...
+
+************************************************************
+
+************************************************************
+
+Computing transcript boundaries...
+	Number of 5'UTRs:			456
+	Number of 3'UTRs:			136
+	Number of predicted RNAs:			489
+	Number of predicted RNAs (not antisense):		28
+	Number of predicted RNAs (antisense):		461
+
+Computing differential gene expression...
+	Number of differentially expressed protein coding genes:	0
+
+Computing likely operons...
+	Number of gene-pairs predicted to be part of the same operon:	1415
+	Number of predicted multi-gene operons:		762
+
+
+Summary of results written to file:	test_results/SRR5486953_output/rockhopper/summary.txt
+Expression of transcripts written to file:	test_results/SRR5486953_output/rockhopper/_transcripts.txt
+Operons written to file:		test_results/SRR5486953_output/rockhopper/_operons.txt
+
+FINISHED.
+
+Execution time:	0 minutes 33 seconds
+
+Tracks:
+    DNA
+    gff
+Sampled input stats:
+                     total namerec bytes 284900
+                      name input records 4496
+        namerecs converted to operations 8624
+        operation stream estimated count 47370
+                       total input bytes 313008
+                   avg record text bytes 33.0357142857143
+                         operations made 50004
+                       namerecs buffered 8624
+           record stream estimated count 9474
+Removing existing contents of target dir data/names
+Hash store cache size: 2684 buckets
+Using 1 chars for sort log names (16 sort logs)
+search in the SRA database,please wait...
+
+Organism: Escherichia coli K-12
+
+Instrument: Illumina Genome Analyzer II
+
+Layout: SINGLE
+
+keggID: eco
+
+
+test_results/SRR5486953_ref	the dir exists.
+
+running....
+fastq-dump SRR5486953 -O test_results/SRR5486953_input
+running Rockhopper....
+Operons written to file:	test_results/SRR5486953_output/rockhopper/SRR5486953_operon.txt
