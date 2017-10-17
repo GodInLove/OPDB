@@ -24,4 +24,6 @@ def rockhopper_operon_predict(srr_n, x, _dir, process_n):
         os.system("java -Xmx3g -cp tools/Rockhopper.jar Rockhopper -p " + process_n + " -g " + _dir[1] + " " + _dir[
             0] + "/" + srr_n + ".fastq -o " + _dir[2] + "/rockhopper -TIME")
     extract_Synonym(_dir,srr_n)
+    os.system("rm " + _dir[2] + "/rockhopper/genomeBrowserFiles/_diff*")
+    os.system("mv " + _dir[2] + "/rockhopper/genomeBrowserFiles/*wig " + _dir[2])
     print("Operons written to file:\t" + _dir[2] + "/rockhopper/" + srr_n + "_operon.txt")

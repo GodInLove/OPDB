@@ -8,15 +8,15 @@ from NCBI_tool.getinformation import getinformation, paired_or_single
 from check_input.check_argv import usage, check_args
 from download_annotion.download_annot import download_annotion
 from download_annotion.download_opr import download_opr
-from format_handle.result2jbrowse import visual, res2jbrowse
+from format_handle.result2jbrowse import res2jbrowse
 from operon_prediction_tool.CONDOP import CONDOP_operon_predict
 from operon_prediction_tool.RNAseg import RNAseg_operon_predict
 from operon_prediction_tool.rockhopper import rockhopper_operon_predict
 
 
-def makedir(srr_n, output_path):
+def makedir(srr_n, output_path, kegg_id):
     input_dir = output_path + srr_n + "_input"
-    ref_dir = output_path + srr_n + "_ref"
+    ref_dir = output_path + kegg_id
     output_dir = output_path + srr_n + "_output"
     dir = output_path + srr_n
     if not os.path.exists(input_dir):
@@ -31,15 +31,14 @@ def makedir(srr_n, output_path):
     else:
         switch_2 = 1
         print("\n" + ref_dir + "\tthe dir exists.\n")
-    if not os.path.exists(output_dir):
-        os.system("mkdir " + output_dir)
+    if not os.path.exists("/home/lyd/webapps/JBrowse/"+srr_n):
+        switch_3 = 0
+        if not os.path.exists(output_dir):
+            os.system("mkdir " + output_dir)
     else:
-        print("\n" + output_dir + "\tthe dir exists.\n")
-    if not os.path.exists(dir):
-        os.system("mkdir " + dir)
-    else:
-        print("\n" + output_dir + "\tthe dir exists.\n")
-    return [input_dir, ref_dir, output_dir, switch_1, switch_2, dir]
+        switch_3 = 1
+        print("\n" + "/home/lyd/webapps/JBrowse/"+srr_n + "\tthe dir exists.\n")
+    return [input_dir, ref_dir, output_dir, switch_1, switch_2, switch_3]
 
 
 def test(srr_n, input_path):
@@ -78,24 +77,28 @@ def main(argv):
         x = paired_or_single(information["Layout"])
         # print x
         # x = 1 means paired-end and x = 0 means single-end
-        _dir = makedir(srr_n, output_path)
+        _dir = makedir(srr_n, output_path , kegg_id)
         # _dir has 3 dir, input_dir, ref_dir, out_dir
         if _dir[3] == 0:
             sra2fastq(srr_n, x, _dir[0])
             #test(srr_n, _dir[0])
         if _dir[4] == 0:
             download_annotion(kegg_id, _dir[1])
-        if method == 0:
-            rockhopper_operon_predict(srr_n, x, _dir, str(process_n))
-            visual(_dir, kegg_id)
-            res2jbrowse(_dir[5])
-        elif method == 1:
-            # WRITE a python/R/Perl script to connect DOOR and download the .opr file
-            download_opr(kegg_id, _dir[1])
-            CONDOP_operon_predict(srr_n, x, _dir, str(process_n))
-        elif method == 2:
-            pass
+        if _dir[5] == 0:
+            if method == 0:
+                rockhopper_operon_predict(srr_n, x, _dir, str(process_n))
+                # print(_dir[5])
+                res2jbrowse(_dir,srr_n)
+            elif method == 1:
+                # WRITE a python/R/Perl script to connect DOOR and download the .opr file
+                download_opr(kegg_id, _dir[1])
+                CONDOP_operon_predict(srr_n, x, _dir, str(process_n))
+            elif method == 2:
+                pass
             # RNAseg_operon_predict(srr_n, x, _dir, str(process_n))
+        else:
+            print("the result has done !")
+
     except getopt.GetoptError:
         usage()
         sys.exit(0)
