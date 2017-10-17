@@ -18,7 +18,6 @@ def makedir(srr_n, output_path, kegg_id):
     input_dir = output_path + srr_n + "_input"
     ref_dir = output_path + kegg_id
     output_dir = output_path + srr_n + "_output"
-    dir = output_path + srr_n
     if not os.path.exists(input_dir):
         switch_1 = 0
         os.system("mkdir " + input_dir)
@@ -93,9 +92,6 @@ def main(argv):
                 # WRITE a python/R/Perl script to connect DOOR and download the .opr file
                 download_opr(kegg_id, _dir[1])
                 CONDOP_operon_predict(srr_n, x, _dir, str(process_n))
-            elif method == 2:
-                pass
-            # RNAseg_operon_predict(srr_n, x, _dir, str(process_n))
         else:
             print("the result has done !")
 
