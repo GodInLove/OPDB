@@ -42,7 +42,7 @@
 
     </div>
 </div>
-<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<!--[if lte IE 8]><script src="../../static/js/ie/respond.min.js"></script><![endif]-->
 <script>
     window.onload = function() { document.body.className = ''; }
     window.ontouchmove = function() { return false; }
