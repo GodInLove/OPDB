@@ -11,17 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f3227ba2-3ac3-4f1b-899d-531a7d30fe26" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/static/images/bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/static/js/ie/respond.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/input.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/input.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/result.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/result.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/thanks.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/thanks.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PyOpdb/check_input/check_argv.py" afterPath="$PROJECT_DIR$/../PyOpdb/check_input/check_argv.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PyOpdb/download_annotion/download_annot.py" afterPath="$PROJECT_DIR$/../PyOpdb/download_annotion/download_annot.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PyOpdb/format_handle/result2jbrowse.py" afterPath="$PROJECT_DIR$/../PyOpdb/format_handle/result2jbrowse.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PyOpdb/format_handle/samtool_handle.py" afterPath="$PROJECT_DIR$/../PyOpdb/format_handle/samtool_handle.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PyOpdb/operon_prediction_tool/CONDOP.py" afterPath="$PROJECT_DIR$/../PyOpdb/operon_prediction_tool/CONDOP.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OperonController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OperonController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/scu/controller/OperonController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="51" column="107" lean-forward="true" selection-start-line="51" selection-start-column="107" selection-end-line="51" selection-end-column="107" />
+            <state relative-caret-position="360">
+              <caret line="51" column="95" lean-forward="false" selection-start-line="51" selection-start-column="95" selection-end-line="51" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -84,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OperonServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OperonServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/scu/service/OperonServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+            <state relative-caret-position="252">
+              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -250,8 +240,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="278" />
-    <option name="y" value="190" />
+    <option name="x" value="254" />
+    <option name="y" value="85" />
     <option name="width" value="1448" />
     <option name="height" value="874" />
   </component>
@@ -277,76 +267,6 @@
             <path>
               <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
               <item name="JOpdb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JOpdb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JOpdb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JOpdb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scu" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JOpdb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scu" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JOpdb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scu" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JOpdb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scu" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JOpdb" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JOpdb" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JOpdb" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JOpdb" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JOpdb" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -929,7 +849,7 @@
       <workItem from="1508305534152" duration="607000" />
       <workItem from="1508316003193" duration="208000" />
       <workItem from="1508326842599" duration="1048000" />
-      <workItem from="1508327980117" duration="5097000" />
+      <workItem from="1508327980117" duration="5376000" />
     </task>
     <task id="LOCAL-00001" summary="update JOpdb">
       <created>1508328862686</created>
@@ -942,10 +862,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231554000" />
+    <option name="totallyTimeSpent" value="231833000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="278" y="190" width="1448" height="874" extended-state="0" />
+    <frame x="254" y="85" width="1448" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -965,8 +885,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26623377" sideWeight="0.49447513" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2669271" sideWeight="0.49447513" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21546961" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
@@ -1258,18 +1178,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/scu/service/OperonServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/scu/controller/OperonController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        <state relative-caret-position="360">
+          <caret line="51" column="95" lean-forward="false" selection-start-line="51" selection-start-column="95" selection-end-line="51" selection-end-column="95" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/scu/controller/OperonController.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/scu/service/OperonServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="51" column="107" lean-forward="true" selection-start-line="51" selection-start-column="107" selection-end-line="51" selection-end-column="107" />
+        <state relative-caret-position="252">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding />
         </state>
       </provider>
