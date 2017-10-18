@@ -24,14 +24,14 @@ public class OperonServiceImpl implements OperonService{
     }
 
     @Override
-    public String predictOP(String srr_num, String kegg_id , String method) throws InterruptedException, IOException {
+    public String predictOP(String srr_num, String kegg_id , String method)  {
         Integer id_method = 0;
         if (method.equals("CONDOP")){
             id_method = 1;
         }
-        String cmd = "python3 main.py -i " + srr_num +" -o /home/lyd/PycharmProjects/OPDB/test_results -m " + id_method.toString() + " -k " + kegg_id;
-        File dir = new File("/home/lyd/PycharmProjects/OPDB/");
-//        try {
+        String cmd = "python3 ../../../../../PyOpdb/main.py -i " + srr_num +" -o ../../../../../PyOpdb/test_results -m " + id_method.toString() + " -k " + kegg_id;
+        File dir = new File("../../../../../PyOpdb/");
+        try {
             Process process;
             process = Runtime.getRuntime().exec(cmd,null,dir);
             int status = process.waitFor();
@@ -39,11 +39,11 @@ public class OperonServiceImpl implements OperonService{
                 System.err.println("Failed to call shell's command");
                 return "wrong";
             }
-//        } catch (IOException e) {
-//            return e.getMessage() + "\n" + cmd;
-//        } catch (InterruptedException e) {
-//            return e.getMessage();
-//        }
+        } catch (IOException e) {
+            return e.getMessage() + "\n" + cmd;
+        } catch (InterruptedException e) {
+            return e.getMessage();
+        }
         operonMapper.addOperon(kegg_id,srr_num);
         return "done";
     }
