@@ -87,7 +87,7 @@ def main(argv):
             if method == 0:
                 rockhopper_operon_predict(srr_n, x, _dir, str(process_n))
                 # print(_dir[5])
-                res2jbrowse(_dir,srr_n)
+                res2jbrowse(_dir,srr_n,kegg_id)
             elif method == 1:
                 # WRITE a python/R/Perl script to connect DOOR and download the .opr file
                 download_opr(kegg_id, _dir[1])

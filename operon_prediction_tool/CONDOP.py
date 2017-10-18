@@ -13,7 +13,7 @@ def CONDOP_operon_predict(srr_n, x, _dir, process_n, align="segemehl"):
     else:
         rockhopper_align(srr_n, x, _dir, process_n)
     # samtools:conut coverage depth
-    samtools(srr_n, _dir)
+    samtools(srr_n, _dir[2])
     extract_3_4(_dir[2] + "/" + srr_n + "_count", _dir[2] + "/" + srr_n + "_table")
     os.system("rm " + _dir[2] + "/" + srr_n + "_count")
     os.system("mkdir " + _dir[2] + "/CONDOP")
