@@ -2,7 +2,7 @@ import getopt
 import os
 import sys
 
-from NCBI_tool.getinformation import getinformation, paired_or_single
+from srr2sam_tool.getinformation import getinformation, paired_or_single
 
 from check_input.check_argv import usage, check_args
 from srr2sam_tool.fastq_dump import sra2fastq

@@ -24,7 +24,7 @@ def rockhopper_operon_predict(srr_n, x, _dir, process_n):
         extract_Synonym(_dir, srr_n)
         samtools(srr_n, _dir[2] + "/rockhopper")
         os.system("rm " + _dir[2] + "/rockhopper/genomeBrowserFiles/_diff*")
-        os.system("mv " + _dir[2] + "/rockhopper/genomeBrowserFiles/*wig " + _dir[2])
+        os.system("mv " + _dir[2] + "/rockhopper/genomeBrowserFiles/_operons.wig " + _dir[2])
         os.system("mv " + _dir[2] + "/rockhopper/*bw " + _dir[2])
         print("Operons written to file:\t" + _dir[2] + "/rockhopper/" + srr_n + "_operon.txt")
     else:

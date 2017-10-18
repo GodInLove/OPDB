@@ -22,7 +22,7 @@ def checksrr_n(srr_n):
         sys.exit(2)
 
 
-def checknc_n(kegg_id):
+def checkkegg_id(kegg_id):
     pat = re.compile(r'[A-Za-z]{3}')
     searchobj = re.search(pat, kegg_id)
     if not searchobj:
@@ -69,7 +69,7 @@ def checkoutput_path(output_path):
 
 def check_args(srr_n, kegg_id, process_n, method, output_path):
     checkmethod(method)
-    checknc_n(kegg_id)
+    checkkegg_id(kegg_id)
     checkprocess_n(process_n)
     output_path = checkoutput_path(output_path)
     checksrr_n(srr_n)
