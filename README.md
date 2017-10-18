@@ -1,23 +1,23 @@
 **dependencies:**
 ___
 **basic**
-1. [Java 1.6] or later
-2. [Python 3.5]
-3. [R 3.4.1] or later
-4. [kegg] database
-5. [NCBI] database
-6. [Jbrowse 1.12.3]
-7. [samtools 1.6]
-8. [rockhopper]
-9. [fastq-dump]
-10. [deeptools]
-11. R library [ProGenome]
-12. R library [magrittr]
+1. [Java 1.6][Java 1.6] or later
+2. [Python 3.5][Python 3.5]
+3. [R 3.4.1][R 3.4.1] or later
+4. [kegg][kegg] database
+5. [NCBI][NCBI] database
+6. [Jbrowse 1.12.3][Jbrowse 1.12.3]
+7. [samtools 1.6][samtools 1.6]
+8. [rockhopper][rockhopper]
+9. [fastq-dump][fastq-dump]
+10. [deeptools][deeptools]
+11. R library [ProGenome][ProGenome]
+12. R library [magrittr][magrittr]
 ___
 **Optional**
-1. [DOOR] database
-2. [segemehl]
-3. R library [CONDOP]
+1. [DOOR][DOOR] database
+2. [segemehl][segemehl]
+3. R library [CONDOP][CONDOP]
 
 ___
 Thanks!
