@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="web:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/web_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="com.scu.opdb/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="com.scu.opdb" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="aspectjweaver-1.8.9" />
+          <element id="library" level="project" name="aspectjrt-1.8.9" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="com.scu.opdb/web/Web2" />
+      <element id="javaee-facet-resources" facet="com.scu.opdb/web/Web2" />
+    </root>
+  </artifact>
+</component>
