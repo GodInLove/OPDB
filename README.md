@@ -10,9 +10,9 @@ ___
 7. [samtools 1.6]
 8. [rockhopper]
 9. [fastq-dump]
-10. [deeptools]
-11. R library [ProGenome]
-12. R library [magrittr]
+ 10. [deeptools]
+ 11. R library [ProGenome]
+ 12. R library [magrittr]
 ___
 **Optional**
 1. [DOOR] database
