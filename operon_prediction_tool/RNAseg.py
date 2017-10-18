@@ -1,6 +1,6 @@
 import os
 
-from align_tool.segemehl import segemehl_align
+from srr2sam_tool.segemehl import segemehl_align
 
 
 def RNAseg_operon_predict(srr_n, x, _dir, process_n):

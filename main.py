@@ -1,16 +1,15 @@
 import getopt
 import os
-
 import sys
 
-from NCBI_tool.fastq_dump import sra2fastq
 from NCBI_tool.getinformation import getinformation, paired_or_single
+
 from check_input.check_argv import usage, check_args
+from srr2sam_tool.fastq_dump import sra2fastq
 from download_annotion.download_annot import download_annotion
 from download_annotion.download_opr import download_opr
 from format_handle.result2jbrowse import res2jbrowse
 from operon_prediction_tool.CONDOP import CONDOP_operon_predict
-from operon_prediction_tool.RNAseg import RNAseg_operon_predict
 from operon_prediction_tool.rockhopper import rockhopper_operon_predict
 
 

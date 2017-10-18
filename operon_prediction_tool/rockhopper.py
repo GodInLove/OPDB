@@ -2,7 +2,6 @@ import os
 
 
 # _dir is a list with (input_path, ref_path, output_path)
-import sys
 
 from format_handle.extract_col import extract_Synonym
 from format_handle.samtool_handle import samtools

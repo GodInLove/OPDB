@@ -1,7 +1,7 @@
 import os
 
-from align_tool.rockhopper_align import rockhopper_align
-from align_tool.segemehl import segemehl_align
+from srr2sam_tool.rockhopper_align import rockhopper_align
+from srr2sam_tool.segemehl import segemehl_align
 from format_handle.extract_col import extract_3_4, extract_some
 from format_handle.samtool_handle import samtools
 
