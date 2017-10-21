@@ -2,38 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fc3d0f5-0653-479b-a87d-a183e6698bb7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/wigToBigWig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/SRR5486953.bam" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/SRR5486953.sam" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/SRR5486953_forw.bam" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/SRR5486953_forw_sort.bam" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/SRR5486953_forw_sort.bam.bai" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/SRR5486953_forw_sort.bw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/SRR5486953_operon.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/SRR5486953_rev.bam" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/SRR5486953_rev_sort.bam" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/SRR5486953_rev_sort.bam.bai" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/SRR5486953_rev_sort.bw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/SRR5486953_sort.bam" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/SRR5486953_sort.bam.bai" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/_operons.wig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/_transcripts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/genomeBrowserFiles/SRR5486953_eco_v1_m15_aT_d500_l33_fr_cF.minus.wig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/genomeBrowserFiles/SRR5486953_eco_v1_m15_aT_d500_l33_fr_cF.plus.wig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/genomeBrowserFiles/_UTRs.wig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/genomeBrowserFiles/_ncRNAs.wig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/intermediary/SRR5486953_eco_v1_m15_aT_d500_l33_fr_cF.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/rockhopper/summary.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/SRR5486953/SRR5486953.fastq" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/wigToBigWig" afterPath="$PROJECT_DIR$/tools/wigToBigWig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NCBI_API/Genome_API/file.py" afterPath="$PROJECT_DIR$/NCBI_API/Genome_API/file.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/prokaryo_anno_download.R" afterPath="$PROJECT_DIR$/scripts/prokaryo_anno_download.R" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NCBI_API/SRA_API/data.py" afterPath="$PROJECT_DIR$/NCBI_API/SRA_API/data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NCBI_API/string.py" afterPath="$PROJECT_DIR$/NCBI_API/string.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NCBI_API/url.py" afterPath="$PROJECT_DIR$/NCBI_API/url.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_PyOpdb/argvs/check.py" afterPath="$PROJECT_DIR$/self_PyOpdb/argvs/check.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_PyOpdb/format/JBrowse.py" afterPath="$PROJECT_DIR$/self_PyOpdb/format/JBrowse.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_PyOpdb/format/__init__.py" afterPath="$PROJECT_DIR$/self_PyOpdb/format/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_PyOpdb/format/handle.py" afterPath="$PROJECT_DIR$/self_PyOpdb/format/handle.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_PyOpdb/tools/__init__.py" afterPath="$PROJECT_DIR$/self_PyOpdb/tools/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_PyOpdb/tools/fastq.py" afterPath="$PROJECT_DIR$/self_PyOpdb/tools/fastq.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_PyOpdb/tools/operon.py" afterPath="$PROJECT_DIR$/self_PyOpdb/tools/operon.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_results/eco/eco.gff" afterPath="$PROJECT_DIR$/test_results/eco/eco.gff" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,15 +25,25 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/OPDB$main.coverage" NAME="main Coverage Results" MODIFIED="1508305366051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PyOpdb$main.coverage" NAME="main Coverage Results" MODIFIED="1508589557037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PyOpdb$main.coverage" NAME="main Coverage Results" MODIFIED="1508592949559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="696">
+              <caret line="32" column="72" lean-forward="false" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="check.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_PyOpdb/argvs/check.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-344">
-              <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+            <state relative-caret-position="82">
+              <caret line="63" column="19" lean-forward="false" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -60,22 +51,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prokaryo_anno_download.R" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/prokaryo_anno_download.R">
+      <file leaf-file-name="get.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/self_PyOpdb/argvs/get.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JBrowse.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/self_PyOpdb/format/JBrowse.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-              <folding />
+            <state relative-caret-position="10">
+              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,8 +66,8 @@
       <file leaf-file-name="handle.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/self_PyOpdb/format/handle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="65" column="43" lean-forward="false" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+            <state relative-caret-position="-326">
+              <caret line="72" column="30" lean-forward="false" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -92,24 +75,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="string.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NCBI_API/string.py">
+      <file leaf-file-name="JBrowse.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/self_PyOpdb/format/JBrowse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+            <state relative-caret-position="72">
+              <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="file.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NCBI_API/Genome_API/file.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-152">
-              <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -117,22 +88,10 @@
       <file leaf-file-name="operon.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/operon.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="25" column="42" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+            <state relative-caret-position="720">
+              <caret line="45" column="65" lean-forward="false" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/self_PyOpdb/format/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="47" lean-forward="false" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-              <folding>
-                <element signature="e#23#55#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,8 +100,38 @@
       <file leaf-file-name="sam.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/sam.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="34" column="47" lean-forward="false" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+            <state relative-caret-position="637">
+              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="34" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fastq.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/fastq.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="url.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NCBI_API/url.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bamCoverage" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/bamCoverage">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -180,18 +169,22 @@
         <option value="$PROJECT_DIR$/format_handle/samtool_handle.py" />
         <option value="$PROJECT_DIR$/operon_prediction_tool/rockhopper.py" />
         <option value="$PROJECT_DIR$/format_handle/result2jbrowse.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/download_annotion/download_annot.py" />
         <option value="$PROJECT_DIR$/self_PyOpdb/tools/sam.py" />
         <option value="$PROJECT_DIR$/self_PyOpdb/argvs/get.py" />
         <option value="$PROJECT_DIR$/scripts/prokaryo_anno_download.R" />
-        <option value="$PROJECT_DIR$/NCBI_API/Genome_API/file.py" />
-        <option value="$PROJECT_DIR$/self_PyOpdb/format/JBrowse.py" />
-        <option value="$PROJECT_DIR$/self_PyOpdb/argvs/check.py" />
         <option value="$PROJECT_DIR$/self_PyOpdb/tools/__init__.py" />
         <option value="$PROJECT_DIR$/self_PyOpdb/format/__init__.py" />
-        <option value="$PROJECT_DIR$/self_PyOpdb/tools/operon.py" />
+        <option value="$PROJECT_DIR$/self_PyOpdb/format/JBrowse.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/NCBI_API/string.py" />
+        <option value="$PROJECT_DIR$/NCBI_API/Genome_API/file.py" />
+        <option value="$PROJECT_DIR$/NCBI_API/SRA_API/data.py" />
+        <option value="$PROJECT_DIR$/NCBI_API/url.py" />
+        <option value="$PROJECT_DIR$/self_PyOpdb/argvs/check.py" />
         <option value="$PROJECT_DIR$/self_PyOpdb/format/handle.py" />
+        <option value="$PROJECT_DIR$/self_PyOpdb/tools/fastq.py" />
+        <option value="$PROJECT_DIR$/self_PyOpdb/tools/operon.py" />
       </list>
     </option>
   </component>
@@ -679,19 +672,27 @@
       <option name="project" value="LOCAL" />
       <updated>1508582481617</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="update">
+      <created>1508590846852</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1508590846852</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="89" y="-6" width="1831" height="1086" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32814237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39377084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22385529" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22385529" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -730,14 +731,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -812,13 +805,6 @@
     <entry file="file://$PROJECT_DIR$/test_results/eco/eco.gff" />
     <entry file="file://$PROJECT_DIR$/operon_prediction_tool/RNAseg.py" />
     <entry file="file://$PROJECT_DIR$/test_results/SRR5486953_output/_operons.wig" />
-    <entry file="file://$PROJECT_DIR$/scripts/bamCoverage">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/sam2grp.py" />
     <entry file="file://$PROJECT_DIR$/operon_prediction_tool/__init__.py" />
     <entry file="file://$PROJECT_DIR$/srr2sam_tool/segemehl.py" />
@@ -838,94 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NCBI_API/url.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_PyOpdb/argvs/get.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NCBI_API/SRA_API/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/fastq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/sam.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="34" column="47" lean-forward="false" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_PyOpdb/argvs/check.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-344">
-          <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/prokaryo_anno_download.R">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NCBI_API/Genome_API/file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NCBI_API/string.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -949,28 +847,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self_PyOpdb/format/JBrowse.py">
+    <entry file="file://$PROJECT_DIR$/scripts/prokaryo_anno_download.R">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+        <state relative-caret-position="240">
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/operon.py">
+    <entry file="file://$PROJECT_DIR$/NCBI_API/Genome_API/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="25" column="42" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NCBI_API/SRA_API/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NCBI_API/Genome_API/file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/NCBI_API/string.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NCBI_API/url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/bamCoverage">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_PyOpdb/argvs/check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="63" column="19" lean-forward="false" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_PyOpdb/argvs/get.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/sam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="34" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="32" column="72" lean-forward="false" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/operon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="45" column="65" lean-forward="false" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/fastq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_PyOpdb/format/JBrowse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/self_PyOpdb/format/handle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="65" column="43" lean-forward="false" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+        <state relative-caret-position="-326">
+          <caret line="72" column="30" lean-forward="false" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
