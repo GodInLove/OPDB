@@ -33,7 +33,7 @@ def check_srr_n(srr_n):
 
 
 def check_kegg_id(kegg_id):
-    return isLegal("[A-Za-z]{3}", kegg_id)
+    return isLegal("[A-Za-z]{3,10}", kegg_id)
 
 
 def check_process_n(process_n):

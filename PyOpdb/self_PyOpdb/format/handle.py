@@ -2,6 +2,10 @@ import re
 
 import os
 
+import sys
+
+import NCBI_API
+
 
 def extract_Synonym_sub(infile, ref):
     f = open(infile, 'r')
@@ -36,11 +40,31 @@ def extract_Synonym(_dir, srr_n):
         f.write(content)
         f.close()
     os.system("rm " + _dir[2] + "/_operons.txt")
+    print("Operons written to file:\t" + _dir[2] + "_operon.txt")
 
 
-def extract_wig(wig_path, gff_path):
-    return 0
-
+def extract_wig(wig_path, gff_path, result_path):
+    # get chrome.sizes
+    chrome_path = result_path+"/chrome.size"
+    f = open(gff_path,'r')
+    content = f.read()
+    f.close()
+    chrome = NCBI_API.findall_pat("\#\#sequence\-region ([NC\_0-9\.]+ 1 [0-9]+)",content)
+    chrome = chrome[0].split(" ")
+    f = open(chrome_path,'w')
+    f.write(chrome[0]+"\t"+chrome[2]+"\n")
+    f.close()
+    # remove the "track_name" in wig file
+    f = open(wig_path,'r')
+    trash = f.readline()
+    content = f.read()
+    f.close()
+    os.system("rm "+ wig_path)
+    f = open(wig_path,'w')
+    f.write(content)
+    f.close()
+    # run the bash to convert wig to bigwig
+    os.system("tools/wigToBigwig " + wig_path + " "+ chrome_path + " " + result_path+"/operon.bw")
 
 def extract_3_4(infile, outfile):
     f = open(infile, 'r')

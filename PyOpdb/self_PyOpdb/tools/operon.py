@@ -1,6 +1,6 @@
 import os
 
-from self_PyOpdb.format import res2jbrowse, extract_Synonym
+from self_PyOpdb.format import res2jbrowse, extract_Synonym, extract_wig
 from self_PyOpdb.tools.sam import samtools, bamCoverage
 
 
@@ -19,7 +19,11 @@ def rockhopper_operon_predict(srr_n, layout, kegg_id, process_n, output_path):
         extract_Synonym(_dir, srr_n)
         os.system("rm " + _dir[2] + "/genomeBrowserFiles/_diff*")
         os.system("mv " + _dir[2] + "/genomeBrowserFiles/_operons.wig " + _dir[2])
-        print("Operons written to file:\t" + _dir[2] + "_operon.txt")
+        gff_path = _dir[1] + "/" + kegg_id + ".gff"
+        if os.path.exists(_dir[1] + "/" + kegg_id + "_orgin.gff"):
+            os.system("rm " + gff_path)
+            os.system("cp " + _dir[1] + "/" + kegg_id + "_orgin.gff " + gff_path)
+        extract_wig(_dir[2]+"/_operons.wig", gff_path, _dir[2])
     else:
         print("\nthe result has done ! Please check the path： " + _dir[2] + "\n")
 
@@ -29,7 +33,7 @@ def operon_predict(srr_n, kegg_id, layout, process_n, method, output_path):
         rockhopper_operon_predict(srr_n, layout, kegg_id, process_n, output_path)
         samtools(srr_n, output_path+"rockhopper")
         bamCoverage(srr_n, output_path+"rockhopper")
-        res2jbrowse([output_path + srr_n, output_path + kegg_id, output_path + "rockhopper"]
+        res2jbrowse( output_path + kegg_id, output_path + "rockhopper"
                     ,srr_n,kegg_id)
     elif method == 1:
         pass
