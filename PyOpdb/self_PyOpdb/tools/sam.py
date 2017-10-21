@@ -33,4 +33,3 @@ def samtools(srr_n, output_path):
     # os.system(
     #     "samtools depth -a " + output_path[2] + "/" + srr_n + "_forw_sort.bam " + output_path[2] + "/" + srr_n + "_rev_sort.bam > " +
     #     output_path + "/" + srr_n + "_count")
-    bamCoverage(srr_n,output_path)

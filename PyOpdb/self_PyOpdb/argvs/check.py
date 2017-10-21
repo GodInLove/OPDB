@@ -48,20 +48,16 @@ def check_method(method):
     return illegal
 
 
-def check_legal_status(legal_status):
+def print_legal_status(legal_status,data):
     if legal_status == illegal:
-        print("please check your input data")
+        print("please check your input data:" + data)
         sys.exit(2)
 
 
 def check_argvs(srr_n, kegg_id, method, process_n, output_path):
     output_path = check_output_path(output_path)
-    legal_status = check_method(method)
-    check_legal_status(legal_status)
-    legal_status = check_srr_n(srr_n)
-    check_legal_status(legal_status)
-    legal_status = check_kegg_id(kegg_id)
-    check_legal_status(legal_status)
-    legal_status = check_process_n(process_n)
-    check_legal_status(legal_status)
+    print_legal_status(check_method(method),method)
+    print_legal_status(check_srr_n(srr_n),srr_n)
+    print_legal_status(check_kegg_id(kegg_id),kegg_id)
+    print_legal_status(check_process_n(process_n),process_n)
     return srr_n, kegg_id, method, str(process_n), output_path

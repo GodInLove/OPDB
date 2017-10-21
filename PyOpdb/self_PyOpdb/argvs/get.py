@@ -20,6 +20,11 @@ def get_argvs(argv):
     process_n = 4
     output_path = ""
     kegg_id = ""
+
+    if len(argv) == 1:
+        usage()
+        sys.exit(0)
+
     try:
         opts, args = getopt.getopt(argv[1:], "hi:o:m:p:k:",
                                    ["help", "input=", "output=", "method=", "processor=", "keggID="])

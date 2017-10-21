@@ -12,7 +12,7 @@ Successfully aligned reads:	8764	88%	(>NC_000913.3 Escherichia coli str. K-12 su
 	Aligning (antisense) to miscellaneous RNAs:	42%
 	Aligning to unannotated regions:        	1%
 
-Sequencing reads written to SAM file:	test_results//rockhopper/SRR5486953.sam
+Sequencing reads written to SAM file:	/home/lyd/Documents/OPDB/PyOpdb/test_results/rockhopper/SRR5486953.sam
 
 Analyzing transcripts...
 
@@ -23,9 +23,9 @@ Analyzing transcripts...
 Computing transcript boundaries...
 	Number of 5'UTRs:			10
 	Number of 3'UTRs:			6
-	Number of predicted RNAs:			485
+	Number of predicted RNAs:			489
 	Number of predicted RNAs (not antisense):		59
-	Number of predicted RNAs (antisense):		426
+	Number of predicted RNAs (antisense):		430
 
 Computing differential gene expression...
 	Number of differentially expressed protein coding genes:	0
@@ -35,9 +35,9 @@ Computing likely operons...
 	Number of predicted multi-gene operons:		762
 
 
-Summary of results written to file:	test_results//rockhopper/summary.txt
-Expression of transcripts written to file:	test_results//rockhopper/_transcripts.txt
-Operons written to file:		test_results//rockhopper/_operons.txt
+Summary of results written to file:	/home/lyd/Documents/OPDB/PyOpdb/test_results/rockhopper/summary.txt
+Expression of transcripts written to file:	/home/lyd/Documents/OPDB/PyOpdb/test_results/rockhopper/_transcripts.txt
+Operons written to file:		/home/lyd/Documents/OPDB/PyOpdb/test_results/rockhopper/_operons.txt
 
 FINISHED.
 

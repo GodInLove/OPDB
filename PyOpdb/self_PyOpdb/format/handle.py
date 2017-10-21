@@ -17,6 +17,31 @@ def extract_Synonym_sub(infile, ref):
     return ref
 
 
+def extract_Synonym(_dir, srr_n):
+    synonym = []
+    for item in os.listdir(_dir[1]):
+        if ".ptt" in item:
+            ptt_file = item
+            synonym = extract_Synonym_sub(_dir[1] + "/" + ptt_file, synonym)
+        if ".rnt" in item:
+            rnt_file = item
+            synonym = extract_Synonym_sub(_dir[1] + "/" + rnt_file, synonym)
+    # print(len(synoym))
+    f = open(_dir[2] + "/_operons.txt", 'r')
+    content = f.read()
+    f.close()
+    for it in synonym:
+        content = content.replace(it[0], it[1])
+        f = open(_dir[2] + "/" + "_operon.txt", 'w')
+        f.write(content)
+        f.close()
+    os.system("rm " + _dir[2] + "/_operons.txt")
+
+
+def extract_wig(wig_path, gff_path):
+    return 0
+
+
 def extract_3_4(infile, outfile):
     f = open(infile, 'r')
     out_f = open(outfile, 'w')
@@ -48,29 +73,3 @@ def extract_some(infile, outfile):
 
     f.close()
     out_f.close()
-
-
-def extract_Synonym(_dir, srr_n):
-    for item in os.listdir(_dir[1]):
-        if ".ptt" in item:
-            ptt_file = item
-        if ".rnt" in item:
-            rnt_file = item
-    ref = []
-    ref = extract_Synonym_sub(_dir[1] + "/" + ptt_file, ref)
-    ref = extract_Synonym_sub(_dir[1] + "/" + rnt_file, ref)
-    # print(len(ref))
-    for item in os.listdir(_dir[2]):
-        if "operons.txt" in item:
-            operon_file = item
-            f = open(_dir[2] + "/" + operon_file, 'r')
-            content = f.read()
-            f.close()
-            for it in ref:
-                content = content.replace(it[0], it[1])
-            f = open(_dir[2] + "/" + srr_n + "_operon.txt", 'w')
-            f.write(content)
-            f.close()
-            os.system("rm " + _dir[2] + "/" + operon_file)
-        else:
-            pass

@@ -233,14 +233,14 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 220658			220697	+	-	predicted RNA	antisense: metQ	2323
 	221621	220968		-	metI	b0198	-	0
 	222645	221614		-	metN	b0199	-	0
-229966			222646	-	-	predicted RNA	antisense: gmhB rrsH ileV rrfH rrlH aspU alaV dkgB	2878
+229966			222646	-	-	predicted RNA	antisense: gmhB rrsH ileV rrfH rrlH aspU alaV dkgB	2574
 	222833	223408		+	gmhB	b0200	-	0
-223771			225312	+	rrsH	b0201	-	703
+223771			225312	+	rrsH	b0201	-	541
 225381			225457	+	ileV	b0202	-	0
 225500			225575	+	alaV	b0203	-	0
-225759			228662	+	rrlH	b0204	-	6490
+225759			228662	+	rrlH	b0204	-	6106
 228756			228875	+	rrfH	b0205	-	0
-228928			229004	+	aspU	b0206	-	658
+228928			229004	+	aspU	b0206	-	0
 	229167	229970		+	dkgB	b0207	-	0
 	230881	229967		-	yafC	b0208	-	0
 	231122	231922		+	yafD	b0209	-	0
@@ -695,7 +695,7 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	686669	685929		-	gltJ	b0654	-	0
 	687747	686839		-	gltI	b0655	-	0
 	689013	687997		-	insH1	b0656	-	0
-688497			688531	+	-	predicted RNA	antisense: insH1	1408
+688313			688344	+	-	predicted RNA	antisense: insH1	1408
 	690881	689343		-	lnt	b0657	-	0
 	691784	690906		-	ybeX	b0658	-	0
 691227			691262	+	-	predicted RNA	antisense: ybeX	1408
@@ -786,11 +786,10 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	779067	779588		+	pal	b0741	-	78
 	779598	780389		+	ybgF	b0742	-	0
 780554			780629	+	lysT	b0743	-	0
-780777			780742	-	-	predicted RNA	antisense: valT	1408
+780816			780742	-	-	predicted RNA	antisense: valT	1220
 780765			780840	+	valT	b0744	-	444
 780843			780918	+	lysW	b0745	-	166
 781068			781143	+	valZ	b0746	-	0
-781119			781091	-	-	predicted RNA	antisense: valZ	1408
 781147			781222	+	lysY	b0747	-	0
 781369			781444	+	lysZ	b0748	-	0
 781577			781652	+	lysQ	b0749	-	0
@@ -1459,7 +1458,6 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	1393227	1394840		+	mppA	b1329	-	25
 	1395922	1394891		-	ynaI	b1330	-	0
 	1396076	1397092		+	insH1	b1331	-	0
-1396776			1396745	-	-	predicted RNA	antisense: insH1	1408
 	1397365	1397622		+	ynaJ	b1332	-	0
 	1398622	1397672		-	uspE	b1333	-	0
 	1399526	1398774		-	fnr	b1334	-	0
@@ -1528,8 +1526,8 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	1463539	1464489		+	paaX	b1399	-	0
 	1464471	1465061		+	paaY	b1400	-	0
 	1465230	1465165		-	ynbG	b4674	-	0
-	1468826	1467921		-	insD1	b1402	-	0
-	1469149	1468784		-	insC1	b1403	-	0
+	1468826	1467921		-	insD1	b1402	-	43
+	1469149	1468784		-	insC1	b1403	-	15
 	1469358	1470509		+	insI1	b1404	-	0
 	1474221	1475081		+	ydbC	b1406	-	0
 	1475144	1477450		+	ydbD	b1407	-	0
@@ -1617,8 +1615,7 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 1568986			1569021	+	-	predicted RNA	antisense: gadC	1408
 1569389			1569424	+	-	predicted RNA	antisense: gadC	1408
 1569798			1569832	+	-	predicted RNA	antisense: gadC	1408
-	1572045	1570645		-	gadB	b1493	-	71
-1571504			1571539	+	-	predicted RNA	antisense: gadB	1408
+	1572045	1570645		-	gadB	b1493	-	70
 	1575202	1572407		-	pqqL	b1494	-	0
 	1577619	1575247		-	yddB	b1495	-	0
 	1579342	1577657		-	yddA	b1496	-	0
@@ -2165,7 +2162,7 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	2065764	2065219		-	cobU	b1993	-	0
 	2067321	2066305		-	insH1	b1994	-	0
 	2069857	2068952		-	insD1	b1996	-	0
-	2070180	2069815		-	insC1	b1997	-	0
+2070180	2070180	2069815		-	insC1	b1997	-	138
 2071317			2071511	+	isrC	b4435	-	0
 	2071539	2074658		+	flu	b2000	-	0
 2079031			2072559	-	-	predicted RNA	antisense: yeeR yeeS cbtA yeeT cbeA flu	15
@@ -2202,7 +2199,7 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	2098301	2097321		-	wzzB	b2027	-	0
 	2099613	2098447		-	ugd	b2028	-	0
 	2101268	2099862		-	gnd	b2029	-	0
-	2102911	2101895		-	insH1	b2030	-	0
+	2102911	2101895		-	insH1	b2030	-	49
 	2104509	2103391		-	wbbK	b2032	-	0
 	2105084	2104494		-	wbbJ	b2033	-	0
 	2106057	2105065		-	wbbI	b2034	-	0
@@ -2215,7 +2212,7 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	2113061	2111976		-	rfbB	b2041	-	45
 	2114327	2113434		-	wcaN	b2042	-	36
 2114340			2114328	-	-	predicted RNA	-	1408
-2097226			2137901	+	-	predicted RNA	antisense: wbbK wbbJ wbbI wbbH cpsG ugd wzxC wzxB wzzB gnd wzb wza glf rfbC wcaL rfbB wcaK wzc wcaJ rfbD wcaI wcaH wcaG rfbA wcaF wcaE insH1 wcaN wcaM cpsB wcaD wcaC wcaB wcaA gmd	7
+2097226			2137901	+	-	predicted RNA	antisense: wbbK wbbJ wbbI wbbH cpsG ugd wzxC wzxB wzzB gnd wzb wza glf rfbC wcaL rfbB wcaK wzc wcaJ rfbD wcaI wcaH wcaG rfbA wcaF wcaE insH1 wcaN wcaM cpsB wcaD wcaC wcaB wcaA gmd	8
 	2115896	2114502		-	wcaM	b2043	-	0
 	2117127	2115907		-	wcaL	b2044	-	0
 	2118404	2117124		-	wcaK	b2045	-	0
@@ -2810,11 +2807,11 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 2724086			2724051	-	-	predicted RNA	antisense: pssA	1408
 	2724128	2724451		+	yfiM	b2586	-	0
 	2725746	2724448		-	kgtP	b2587	-	0
-2724452			2736145	+	-	predicted RNA	antisense: ryfD rrsG rrfG yfiH clpB gltW kgtP rluD rrlG	3208
+2724452			2736145	+	-	predicted RNA	antisense: ryfD rrsG rrfG yfiH clpB gltW kgtP rluD rrlG	3154
 2726188			2726069	-	rrfG	b2588	-	0
-2729184			2726281	-	rrlG	b2589	-	12786
+2729184			2726281	-	rrlG	b2589	-	12662
 2729444			2729369	-	gltW	b2590	-	0
-2731157			2729616	-	rrsG	b2591	-	1255
+2731157			2729616	-	rrsG	b2591	-	1259
 	2734173	2731600		-	clpB	b2592	-	77
 2734295			2734153	-	ryfD	b4609	-	0
 	2735034	2734303		-	yfiH	b2593	-	0
@@ -3223,7 +3220,7 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	3126522	3125470		-	glcE	b4468	-	0
 	3128021	3126522		-	glcD	b2979	-	0
 	3128272	3129036		+	glcC	b2980	-	0
-	3130178	3131194		+	insH1	b2982	-	49
+	3130178	3131194		+	insH1	b2982	-	0
 	3132408	3131341		-	yghQ	b2983	-	0
 	3133212	3132454		-	yghR	b2984	-	0
 	3133957	3133244		-	yghS	b2985	-	0
@@ -3281,8 +3278,8 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	3184466	3183813		-	ribB	b3041	-	0
 	3184840	3185130		+	yqiC	b3042	-	0
 	3185414	3185965		+	ygiL	b3043	-	0
-	3186187	3186552		+	insC1	b3044	-	15
-	3186510	3187415		+	insD1	b3045	-	43
+	3186187	3186552		+	insC1	b3044	-	0
+	3186510	3187415		+	insD1	b3045	-	0
 	3189881	3190630		+	yqiH	b3047	-	0
 	3190632	3191696		+	yqiI	b3048	-	0
 	3191939	3191739		-	glgS	b3049	-	0
@@ -3539,14 +3536,14 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	3420134	3421315		+	yhdX	b3269	-	0
 	3421325	3422428		+	yhdY	b3270	-	0
 	3422436	3423194		+	yhdZ	b3271	-	0
-3423195			3429235	+	-	predicted RNA	antisense: alaU ileU rrsD rrfF rrfD rrlD thrV	6313
+3423195			3429235	+	-	predicted RNA	antisense: alaU ileU rrsD rrfF rrfD rrlD thrV	6559
 3423542			3423423	-	rrfF	b3272	-	0
 3423655			3423580	-	thrV	b3273	-	0
 3423787			3423668	-	rrfD	b3274	-	0
-3426783			3423880	-	rrlD	b3275	-	12476
+3426783			3423880	-	rrlD	b3275	-	12500
 3427033			3426958	-	alaU	b3276	-	0
 3427152			3427076	-	ileU	b3277	-	0
-3428762			3427221	-	rrsD	b3278	-	1695
+3428762			3427221	-	rrsD	b3278	-	1591
 	3429236	3429790		+	yrdA	b3279	-	0
 	3430023	3429766		-	yrdB	b3280	-	0
 	3430838	3430020		-	aroE	b3281	-	0
@@ -3609,13 +3606,17 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	3466725	3466249		-	bfr	b3336	-	0
 	3466991	3466797		-	bfd	b3337	-	0
 	3469853	3467160		-	chiA	b3338	-	0
-3471329	3471329	3470145	3470145	-	tufA	b3339	-	199
+3471329	3471329	3470145	3470145	-	tufA	b3339	-	121
 3471384			3471349	-	-	predicted RNA	-	1408
-3466221			3477639	+	-	predicted RNA	antisense: bfd yheO rpsL tusD tusB rpsG tusC tufA fusA bfr chiA fkpA	95
+3470174			3470209	+	-	predicted RNA	antisense: tufA	1408
+3470612			3470675	+	-	predicted RNA	antisense: tufA	1562
+3470838			3473624	+	-	predicted RNA	antisense: rpsG tufA fusA	304
 3473514	3473514	3471400	3471400	-	fusA	b3340	-	177
 3474081	3474081	3473542	3473542	-	rpsG	b3341	-	91
+3473716			3473781	+	-	predicted RNA	antisense: rpsG	1344
 	3474552	3474178		-	rpsL	b3342	-	0
 	3474965	3474678		-	tusB	b3343	-	0
+3474887			3474922	+	-	predicted RNA	antisense: tusB	1408
 	3475332	3474973		-	tusC	b3344	-	0
 	3475718	3475332		-	tusD	b3345	-	0
 	3476440	3475718		-	yheO	b3346	-	0
@@ -3812,7 +3813,7 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	3664618	3663890		-	gadW	b3515	-	0
 3664864			3664968	+	gadY	b4452	-	0
 	3665810	3664986		-	gadX	b3516	-	61
-	3667580	3666180		-	gadA	b3517	-	34
+	3667580	3666180		-	gadA	b3517	-	35
 	3669188	3667791		-	yhjA	b3518	-	0
 	3669592	3671241		+	treF	b3519	-	0
 	3671894	3671292		-	yhjB	b3520	-	0
@@ -4084,12 +4085,12 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	3938227	3939219		+	rbsR	b3753	-	0
 	3940612	3939185		-	hsrA	b3754	-	0
 	3941327	3940635		-	yieP	b3755	-	0
-3947127			3941328	-	-	predicted RNA	antisense: rrlC trpT rrsC gltU rrfC aspT	3524
-3941808			3943349	+	rrsC	b3756	-	425
+3947127			3941328	-	-	predicted RNA	antisense: rrlC trpT rrsC gltU rrfC aspT	3724
+3941808			3943349	+	rrsC	b3756	-	407
 3943435			3943510	+	gltU	b3757	-	0
-3943704			3946607	+	rrlC	b3758	-	6827
+3943704			3946607	+	rrlC	b3758	-	7063
 3946700			3946819	+	rrfC	b3759	-	0
-3946872			3946948	+	aspT	b3760	-	0
+3946872			3946948	+	aspT	b3760	-	658
 3946957			3947032	+	trpT	b3761	-	0
 	3947967	3947128		-	hdfR	b4480	-	0
 	3948086	3948424		+	yifE	b3764	-	0
@@ -4196,15 +4197,14 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	4032492	4033106		+	yigZ	b3848	-	0
 	4033145	4034596		+	trkH	b3849	-	0
 	4034608	4035153		+	hemG	b3850	-	0
-4035531			4037072	+	rrsA	b3851	-	765
-4039388			4035741	-	-	predicted RNA	antisense: rrlA ileT alaT rrsA	5682
+4035531			4037072	+	rrsA	b3851	-	618
+4035656			4035622	-	-	predicted RNA	antisense: rrsA	1408
+4039565			4035825	-	-	predicted RNA	antisense: rrlA ileT alaT rrsA	5150
 4037141			4037217	+	ileT	b3852	-	0
 4037260			4037335	+	alaT	b3853	-	0
-4037519			4040423	+	rrlA	b3854	-	7052
-4039544			4039453	-	-	predicted RNA	antisense: rrlA	2173
-4039866			4039745	-	-	predicted RNA	antisense: rrlA	1189
-4039965			4039931	-	-	predicted RNA	antisense: rrlA	1408
-4040413			4040122	-	-	predicted RNA	antisense: rrlA	3405
+4037519			4040423	+	rrlA	b3854	-	7040
+4039973			4039733	-	-	predicted RNA	antisense: rrlA	2057
+4040413			4040060	-	-	predicted RNA	antisense: rrlA	3075
 4040517			4040636	+	rrfA	b3855	-	0
 	4041433	4040906		-	mobB	b3856	-	0
 	4041999	4041415		-	mobA	b3857	-	0
@@ -4333,13 +4333,17 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	4163270	4162170		-	trmA	b3965	-	46
 	4163639	4165483		+	btuB	b3966	-	27
 	4165428	4166285		+	murI	b3967	-	0
-4166659			4168200	+	rrsB	b3968	-	421
-4167103			4166750	-	-	predicted RNA	antisense: rrsB	1702
-4167255			4167220	-	-	predicted RNA	antisense: rrsB	1408
-4167497			4167462	-	-	predicted RNA	antisense: rrsB	1408
-4174020			4167548	-	-	predicted RNA	antisense: rrlB gltT birA rrfB rrsB murB	3131
+4166659			4168200	+	rrsB	b3968	-	579
+4167110			4166767	-	-	predicted RNA	antisense: rrsB	1883
+4167319			4167224	-	-	predicted RNA	antisense: rrsB	1056
+4167444			4167371	-	-	predicted RNA	antisense: rrsB	1351
 4168372			4168447	+	gltT	b3969	-	0
-4168641			4171544	+	rrlB	b3970	-	6209
+4168641			4171544	+	rrlB	b3970	-	6620
+4168716			4168681	-	-	predicted RNA	antisense: rrlB	1408
+4170625			4168772	-	-	predicted RNA	antisense: rrlB	11199
+4171068			4170810	-	-	predicted RNA	antisense: rrlB	1484
+4171157			4171123	-	-	predicted RNA	antisense: rrlB	1408
+4171532			4171230	-	-	predicted RNA	antisense: rrlB	2082
 4171637			4171756	+	rrfB	b3971	-	0
 	4172057	4173085		+	murB	b3972	-	0
 	4173082	4174047		+	birA	b3973	-	0
@@ -4348,7 +4352,7 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 4175472			4175556	+	tyrU	b3977	-	0
 4175673			4175747	+	glyT	b3978	-	657
 4175754			4175829	+	thrT	b3979	-	0
-4175944	4175944	4177128	4177128	+	tufB	b3980	-	168
+4175944	4175944	4177128	4177128	+	tufB	b3980	-	247
 4177358	4177358	4177741	4177741	+	secE	b3981	-	132
 	4177743	4178288		+	nusG	b3982	-	0
 4178447	4178447	4178875	4178878	+	rplK	b3983	-	328
@@ -4378,10 +4382,10 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	4203320	4204645		+	zraR	b4004	-	0
 	4205931	4204642		-	purD	b4005	-	0
 	4207532	4205943		-	purH	b4006	-	0
-4213679			4207533	-	-	predicted RNA	antisense: rrsE gltV yjaA rrfE rrlE	3227
-4208147			4209688	+	rrsE	b4007	-	642
+4213679			4207533	-	-	predicted RNA	antisense: rrsE gltV yjaA rrfE rrlE	3172
+4208147			4209688	+	rrsE	b4007	-	911
 4209774			4209849	+	gltV	b4008	-	0
-4210043			4212946	+	rrlE	b4009	-	6143
+4210043			4212946	+	rrlE	b4009	-	5993
 4213040			4213159	+	rrfE	b4010	-	0
 	4213234	4213617		+	yjaA	b4011	-	0
 	4214123	4213680		-	yjaB	b4012	-	0
@@ -4664,7 +4668,7 @@ Transcription Start	Translation Start	Translation Stop	Transcription Stop	Strand
 	4494623	4495186		+	idnK	b4268	-	0
 	4496209	4495190		-	ahr	b4269	-	0
 4496405			4496489	+	leuX	b4270	-	0
-4498272	4498272	4498637		+	insC1	b4272	-	138
+	4498272	4498637		+	insC1	b4272	-	0
 	4498595	4499500		+	insD1	b4273	-	0
 	4501260	4501589		+	yjgZ	b4277	-	0
 4502043			4502009	-	-	predicted RNA	-	1408

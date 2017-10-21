@@ -1,8 +1,7 @@
 import os
 
-from self_PyOpdb.format import res2jbrowse
-from self_PyOpdb.format.handle import extract_Synonym
-from self_PyOpdb.tools.sam import samtools
+from self_PyOpdb.format import res2jbrowse, extract_Synonym
+from self_PyOpdb.tools.sam import samtools, bamCoverage
 
 
 def rockhopper_operon_predict(srr_n, layout, kegg_id, process_n, output_path):
@@ -29,6 +28,7 @@ def operon_predict(srr_n, kegg_id, layout, process_n, method, output_path):
     if method == 0:
         rockhopper_operon_predict(srr_n, layout, kegg_id, process_n, output_path)
         samtools(srr_n, output_path+"rockhopper")
+        bamCoverage(srr_n, output_path+"rockhopper")
         res2jbrowse([output_path + srr_n, output_path + kegg_id, output_path + "rockhopper"]
                     ,srr_n,kegg_id)
     elif method == 1:
