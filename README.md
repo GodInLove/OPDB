@@ -14,14 +14,25 @@ ___
 11. R library [ProGenome]
 12. R library [magrittr]
 13. UCSC [wigToBigwig] tools
-___
+
 **Optional**
+___
 1. [DOOR] database
 2. [segemehl]
 3. R library [CONDOP]
 
-___
 Thanks!
+___
+**Result**
+![](images/index.png)
+
+the form required your email account to send you a email when your job was done(if the srr_number that you enter is not in our database)
+
+the form required the srr_number and the organism kegg_id
+
+![](images/jbrowse.png)
+
+![](images/igv.png)
 
 [Java 1.6]:http://www.oracle.com/technetwork/java/javase/downloads/index.html
 

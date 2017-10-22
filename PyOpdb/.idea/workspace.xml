@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fc3d0f5-0653-479b-a87d-a183e6698bb7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/eco/eco.genome" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_results/eco/eco.fna.fai" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_results/SRR5486953/SRR5486953.fastq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/wigToBigWig" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JOpdb/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../JOpdb/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_PyOpdb/format/JBrowse.py" afterPath="$PROJECT_DIR$/self_PyOpdb/format/JBrowse.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_PyOpdb/format/handle.py" afterPath="$PROJECT_DIR$/self_PyOpdb/format/handle.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/self_PyOpdb/tools/sam.py" afterPath="$PROJECT_DIR$/self_PyOpdb/tools/sam.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_results/eco/eco.fna" afterPath="$PROJECT_DIR$/test_results/eco/eco.fna" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_results/eco/eco.gff" afterPath="$PROJECT_DIR$/test_results/eco/eco.gff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../README.md" afterPath="$PROJECT_DIR$/../README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -676,7 +664,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508594582171</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update">
+      <created>1508680998347</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1508680998347</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
