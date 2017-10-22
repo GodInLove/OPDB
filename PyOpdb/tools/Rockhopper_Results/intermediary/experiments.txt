@@ -1,5 +1,0 @@
-2.03
-false
-1
-NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete genome	/home/lyd/Documents/OPDB/PyOpdb/test_results/eco
-1	/home/lyd/Documents/OPDB/PyOpdb/test_results/SRR5486953/SRR5486953.fastq
