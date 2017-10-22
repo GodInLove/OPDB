@@ -64,7 +64,9 @@ def extract_wig(wig_path, gff_path, result_path):
     f.write(content)
     f.close()
     # run the bash to convert wig to bigwig
-    os.system("tools/wigToBigwig " + wig_path + " " + chrome_path + " " + result_path + "/operon.bw")
+    tools_path = "/home/lyd/Documents/OPDB/PyOpdb/tools/wigToBigwig"
+    # print(tools_path + " " + wig_path + " " + chrome_path + " " + result_path + "/operon.bw")
+    os.popen(tools_path + " " + wig_path + " " + chrome_path + " " + result_path + "/operon.bw")
 
 
 def extract_Synonym_sub(infile, ref):

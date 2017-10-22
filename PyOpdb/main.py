@@ -29,7 +29,7 @@ if __name__ == "__main__":
     # convert sra data to fastq data with ncbi sra-tookit(fastq-dump)
     self_PyOpdb.srr_n_to_fastq(srr_n, srr_information["Layout"], output_path)
     # test, get 10000 reads from the origin data
-    test(srr_n,output_path)
+    #test(srr_n,output_path)
     # download annotion files like .gff .fna and convert .gff to .ptt|.rnt with ProGenome(a R package)
     NCBI_API.Genome_API.download_annotion(kegg_id, output_path)
     # operon_predict method (code with scripts or function)

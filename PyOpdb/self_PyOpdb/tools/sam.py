@@ -7,8 +7,8 @@ def bamCoverage(srr_n, output_path):
         "scripts/bamCoverage -b " + output_path + "/" + srr_n + "_rev_sort.bam -o " + output_path + "/" + srr_n + "_rev_sort.bw")
     os.system(
         "scripts/bamCoverage -b " + output_path + "/" + srr_n + "_forw_sort.bam -o " + output_path + "/" + srr_n + "_forw_sort.bw")
-    os.system(
-        "scripts/bamCoverage -b " + output_path + "/" + srr_n + "_sort.bam -o " + output_path + "/" + srr_n + "_sort.bw")
+    # os.system(
+    #     "scripts/bamCoverage -b " + output_path + "/" + srr_n + "_sort.bam -o " + output_path + "/" + srr_n + "_sort.bw")
 
 
 def samtools(srr_n, output_path):

@@ -15,7 +15,7 @@ def res2jbrowse(ref_path, result_path, srr_n, kegg_id):
         "cd " + path + " && bin/add-bw-track.pl --bw_url " + srr_n + "_rev_sort.bw --key rev.bw --label rnaseq2 --pos_color red --plot")
     # operon.bw
     os.system(
-         "cd " + path + " && bin/add-bw-track.pl --bw_url " + srr_n + "_operon.bw --key all.bw --label rnaseq --pos_color blue --neg_color red --plot")
+         "cd " + path + " && bin/add-bw-track.pl --bw_url operon.bw --key operon.bw --label rnaseq --pos_color blue --neg_color red --plot")
     # handle reference .gff
     os.system(
         "cd " + path + " && bin/flatfile-to-json.pl --gff " + ref_path + "/*.gff --trackType CanvasFeatures --trackLabel gff")

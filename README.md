@@ -10,9 +10,10 @@ ___
 7. [samtools 1.6]
 8. [rockhopper]
 9. [fastq-dump]
- 10. [deeptools]
- 11. R library [ProGenome]
- 12. R library [magrittr]
+10. [deeptools]
+11. R library [ProGenome]
+12. R library [magrittr]
+13. UCSC [wigToBigwig] tools
 ___
 **Optional**
 1. [DOOR] database
@@ -51,4 +52,6 @@ Thanks!
 [segemehl]:http://www.bioinf.uni-leipzig.de/Software/segemehl/
 
 [CONDOP]:https://cran.r-project.org/web/packages/CONDOP/index.html
+
+[wigToBigwig]:https://genome.ucsc.edu/goldenpath/help/bigWig.html
 

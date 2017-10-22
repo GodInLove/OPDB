@@ -10,90 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3227ba2-3ac3-4f1b-899d-531a7d30fe26" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/common/util/JsonUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/common/util/MD5Util.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/controller/OperonController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/dao/OperonMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/dao/OperonMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/entity/Operon.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/service/MailService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/service/MailServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/service/OperonService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/service/OperonServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/spring-mvc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/spring-mybatis.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/jsp/input.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/jsp/result.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/jsp/thanks.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/aspectjrt-1.8.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/aspectjweaver-1.8.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/commons-dbcp-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/commons-pool-1.5.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/fastjson-1.2.27.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jackson-annotations-2.8.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jackson-core-2.8.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jackson-databind-2.8.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/junit-4.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/mybatis-3.4.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/mybatis-spring-1.3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.40.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/spring-aop-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/spring-beans-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/spring-context-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/spring-context-support-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/spring-core-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/spring-expression-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/spring-jdbc-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/spring-orm-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/spring-test-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/spring-tx-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/spring-web-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/spring-webmvc-4.3.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/css/ie8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/css/ie9.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/images/bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/images/ie/footer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/images/ie/footer.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/images/overlay-pattern.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/images/overlay.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/js/ie/PIE.htc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/js/ie/html5shiv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/js/ie/respond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/sass/ie8.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/sass/ie9.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/sass/libs/_functions.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/sass/libs/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/sass/libs/_skel.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/sass/libs/_vars.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/static/sass/main.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/com.scu.opdb/edu/scu/common/util/JsonUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/com.scu.opdb/edu/scu/common/util/MD5Util.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/com.scu.opdb/edu/scu/controller/OperonController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/com.scu.opdb/edu/scu/dao/OperonMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/com.scu.opdb/edu/scu/dao/OperonMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/com.scu.opdb/edu/scu/entity/Operon.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/com.scu.opdb/edu/scu/service/MailService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/com.scu.opdb/edu/scu/service/MailServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/com.scu.opdb/edu/scu/service/OperonService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/com.scu.opdb/edu/scu/service/OperonServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/com.scu.opdb/spring-mvc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/com.scu.opdb/spring-mybatis.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PyOpdb/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../PyOpdb/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PyOpdb/main.py" afterPath="$PROJECT_DIR$/../PyOpdb/main.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -321,10 +240,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -361,6 +276,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -940,6 +859,7 @@
       <workItem from="1508469174218" duration="8000" />
       <workItem from="1508481815848" duration="30000" />
       <workItem from="1508505347244" duration="15000" />
+      <workItem from="1508643681671" duration="337000" />
     </task>
     <task id="LOCAL-00001" summary="update JOpdb">
       <created>1508328862686</created>
@@ -959,35 +879,35 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232588000" />
+    <option name="totallyTimeSpent" value="232925000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="238" y="119" width="1448" height="874" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2669271" sideWeight="0.5055249" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2669271" sideWeight="0.49447513" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21546961" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15897436" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2669271" sideWeight="0.49447513" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21546961" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -995,7 +915,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15897436" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272727" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
