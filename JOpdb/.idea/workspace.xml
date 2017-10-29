@@ -10,7 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3227ba2-3ac3-4f1b-899d-531a7d30fe26" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/operonDB.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PyOpdb/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../PyOpdb/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,6 +63,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="spring-mybatis.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/spring-mybatis.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="737">
+              <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="operonDB.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sql/operonDB.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -71,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="101">
@@ -256,7 +278,7 @@
   <component name="MavenProjectNavigator">
     <treeState />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="238" />
     <option name="y" value="119" />
     <option name="width" value="1448" />
@@ -284,6 +306,16 @@
             <path>
               <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
               <item name="JOpdb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JOpdb" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JOpdb" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JOpdb" type="b2602c69:ProjectViewProjectNode" />
@@ -918,7 +950,7 @@
       <workItem from="1508643681671" duration="337000" />
       <workItem from="1508715870305" duration="605000" />
       <workItem from="1508720097511" duration="65000" />
-      <workItem from="1509292552767" duration="1031000" />
+      <workItem from="1509292552767" duration="2880000" />
     </task>
     <task id="LOCAL-00001" summary="update JOpdb">
       <created>1508328862686</created>
@@ -952,10 +984,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234626000" />
+    <option name="totallyTimeSpent" value="236475000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="238" y="119" width="1448" height="874" extended-state="1" />
+    <frame x="238" y="119" width="1448" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1078,7 +1110,6 @@
     <entry file="file://$PROJECT_DIR$/web/JBrowse/src/JBrowse/package.json" />
     <entry file="file://$PROJECT_DIR$/web/browse/index.html" />
     <entry file="file://$PROJECT_DIR$/web/JBrowse/index.html" />
-    <entry file="file://$PROJECT_DIR$/sql/operonDB.sql" />
     <entry file="file://$PROJECT_DIR$/src/edu/scu/service/JavaMailService.java" />
     <entry file="file://$PROJECT_DIR$/src/edu/scu/controller/SendEmailController.java" />
     <entry file="file://$PROJECT_DIR$/src/edu/scu/service/JavaMailServiceImpl.java" />
@@ -1208,14 +1239,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/thanks.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="533">
@@ -1268,6 +1291,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
           <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="737">
+          <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/operonDB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
           <folding />
         </state>
       </provider>
