@@ -64,7 +64,7 @@ def extract_wig(wig_path, gff_path, result_path):
     f.write(content)
     f.close()
     # run the bash to convert wig to bigwig
-    tools_path = "/home/lyd/Documents/OPDB/PyOpdb/tools/wigToBigwig"
+    tools_path = "/home/yaodongliu/OPDB/PyOpdb/tools/wigToBigwig"
     # print(tools_path + " " + wig_path + " " + chrome_path + " " + result_path + "/operon.bw")
     os.popen(tools_path + " " + wig_path + " " + chrome_path + " " + result_path + "/operon.bw")
 
