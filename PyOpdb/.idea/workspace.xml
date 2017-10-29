@@ -2,6 +2,93 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fc3d0f5-0653-479b-a87d-a183e6698bb7" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/common/util/JsonUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/common/util/MD5Util.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/controller/OperonController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/dao/OperonMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/dao/OperonMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/entity/Operon.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/service/MailService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/service/MailServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/service/OperonService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/classes/edu/scu/service/OperonServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/classes/spring-mvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/classes/spring-mybatis.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/jsp/input.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/jsp/result.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/jsp/thanks.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/aspectjrt-1.8.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/aspectjweaver-1.8.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/commons-dbcp-1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/commons-pool-1.5.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/fastjson-1.2.27.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/jackson-annotations-2.8.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/jackson-core-2.8.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/jackson-databind-2.8.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/junit-4.12.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/mybatis-3.4.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/mybatis-spring-1.3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.40.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/spring-aop-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/spring-beans-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/spring-context-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/spring-context-support-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/spring-core-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/spring-expression-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/spring-jdbc-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/spring-orm-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/spring-test-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/spring-tx-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/spring-web-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/lib/spring-webmvc-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/css/ie8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/css/ie9.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/images/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/images/ie/footer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/images/ie/footer.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/images/overlay-pattern.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/images/overlay.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/js/ie/PIE.htc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/js/ie/html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/js/ie/respond.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/sass/ie8.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/sass/ie9.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/sass/libs/_functions.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/sass/libs/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/sass/libs/_skel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/sass/libs/_vars.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/artifacts/web_war_exploded/static/sass/main.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/production/com.scu.opdb/edu/scu/common/util/JsonUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/production/com.scu.opdb/edu/scu/common/util/MD5Util.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/production/com.scu.opdb/edu/scu/controller/OperonController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/production/com.scu.opdb/edu/scu/dao/OperonMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/production/com.scu.opdb/edu/scu/dao/OperonMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/production/com.scu.opdb/edu/scu/entity/Operon.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/production/com.scu.opdb/edu/scu/service/MailService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/production/com.scu.opdb/edu/scu/service/MailServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/production/com.scu.opdb/edu/scu/service/OperonService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/production/com.scu.opdb/edu/scu/service/OperonServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/production/com.scu.opdb/spring-mvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../JOpdb/out/production/com.scu.opdb/spring-mybatis.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../JOpdb/web/WEB-INF/jsp/input.jsp" afterPath="$PROJECT_DIR$/../JOpdb/web/WEB-INF/jsp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JOpdb/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../JOpdb/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JOpdb/src/edu/scu/controller/OperonController.java" afterPath="$PROJECT_DIR$/../JOpdb/src/edu/scu/controller/OperonController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JOpdb/src/edu/scu/service/OperonServiceImpl.java" afterPath="$PROJECT_DIR$/../JOpdb/src/edu/scu/service/OperonServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JOpdb/web/WEB-INF/jsp/result.jsp" afterPath="$PROJECT_DIR$/../JOpdb/web/WEB-INF/jsp/result.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,10 +104,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
+            <state relative-caret-position="504">
               <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding />
             </state>
@@ -30,7 +117,7 @@
       <file leaf-file-name="check.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_PyOpdb/argvs/check.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1416">
+            <state relative-caret-position="1062">
               <caret line="63" column="19" lean-forward="false" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -42,7 +129,7 @@
       <file leaf-file-name="get.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_PyOpdb/argvs/get.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="252">
               <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -51,7 +138,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="handle.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="handle.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_PyOpdb/format/handle.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="296">
@@ -66,7 +153,7 @@
       <file leaf-file-name="JBrowse.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_PyOpdb/format/JBrowse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="306">
               <caret line="17" column="80" lean-forward="false" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
               <folding />
             </state>
@@ -76,7 +163,7 @@
       <file leaf-file-name="operon.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/operon.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="630">
               <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -88,7 +175,7 @@
       <file leaf-file-name="sam.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/sam.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="162">
               <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="10" selection-end-column="123" />
               <folding />
             </state>
@@ -98,7 +185,7 @@
       <file leaf-file-name="fastq.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/fastq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
+            <state relative-caret-position="144">
               <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="21" />
               <folding />
             </state>
@@ -108,7 +195,7 @@
       <file leaf-file-name="bamCoverage" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/bamCoverage">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="180">
               <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
@@ -677,17 +764,17 @@
   <component name="ToolWindowManager">
     <frame x="277" y="35" width="1400" height="1000" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3071749" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.316839" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39237392" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32718328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39237392" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -803,13 +890,7 @@
     <entry file="file://$PROJECT_DIR$/format_handle/extract_col.py" />
     <entry file="file://$PROJECT_DIR$/operon_prediction_tool/rockhopper.py" />
     <entry file="file://$PROJECT_DIR$/format_handle/result2jbrowse.py" />
-    <entry file="file://$PROJECT_DIR$/test_results/SRR5486953/SRR5486953.fastq">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/SRR5486953/SRR5486953.fastq" />
     <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -842,9 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -852,9 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -875,7 +950,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/bamCoverage">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="180">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
@@ -883,7 +958,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/self_PyOpdb/argvs/check.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1416">
+        <state relative-caret-position="1062">
           <caret line="63" column="19" lean-forward="false" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -893,7 +968,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/self_PyOpdb/argvs/get.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="252">
           <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -901,51 +976,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_results/rockhopper/_operons.wig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/fastq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test_results/rockhopper/_operons.wig" />
     <entry file="file://$PROJECT_DIR$/self_PyOpdb/format/JBrowse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="306">
           <caret line="17" column="80" lean-forward="false" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/operon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/sam.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="10" selection-end-column="123" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -957,6 +992,40 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/fastq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/sam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="10" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_PyOpdb/tools/operon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

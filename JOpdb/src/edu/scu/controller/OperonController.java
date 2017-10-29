@@ -40,8 +40,7 @@ public class OperonController {
             if (predictResult.equals("done")){
                 mailService.sendMail(sentTo,
                         "OPDB job",
-                        "your job link is http://127.0.0.1:8080/JBrowse/index.html?data=" + srr_num +
-                        "\n\ncontact us with ttttttliu@qq.com");
+                        "your job link is http://bioinfor.scu.edu.cn/OPDB/JBrowse/index.html?data=" + srr_num + "\n\ncontact us with ttttttliu@qq.com");
             }
             else {
                 mailService.sendMail(sentTo,

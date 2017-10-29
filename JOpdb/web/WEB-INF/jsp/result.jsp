@@ -32,7 +32,7 @@
 
         <!-- Header -->
         <header id="header">
-            <h1><a href="http://127.0.0.1:8080/JBrowse/index.html?data=${srr_num}">OPDB RESULT</a></h1>
+            <h1><a href="http://bioinfor.scu.edu.cn/OPDB/JBrowse/index.html?data=${srr_num}">OPDB RESULT</a></h1>
         </header>
 
         <!-- Footer -->
