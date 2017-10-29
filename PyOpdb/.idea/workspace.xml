@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5fc3d0f5-0653-479b-a87d-a183e6698bb7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JOpdb/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../JOpdb/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/scripts/prokaryo_anno_download.R">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1026">
-              <caret line="57" column="34" lean-forward="true" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+              <caret line="57" column="34" lean-forward="false" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -86,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/NCBI_API/Genome_API/file.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
-              <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+              <caret line="31" column="52" lean-forward="false" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -181,7 +180,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="250" />
     <option name="y" value="48" />
     <option name="width" value="1400" />
@@ -700,7 +699,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="250" y="48" width="1400" height="1000" extended-state="1" />
+    <frame x="250" y="48" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34268832" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -937,7 +936,7 @@
     <entry file="file://$PROJECT_DIR$/scripts/prokaryo_anno_download.R">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1026">
-          <caret line="57" column="34" lean-forward="true" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+          <caret line="57" column="34" lean-forward="false" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -961,7 +960,7 @@
     <entry file="file://$PROJECT_DIR$/NCBI_API/Genome_API/file.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
-          <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+          <caret line="31" column="52" lean-forward="false" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
           <folding />
         </state>
       </provider>
