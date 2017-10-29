@@ -18,6 +18,7 @@ def download_annotion(kegg_id, anno_path):
     # check whether the anno_path exists or not
     if not os.path.exists(anno_path):
         os.system("mkdir " + anno_path)
+        os.system("Rscript scripts/prokaryo_anno_download.R " + kegg_id + " " + anno_path)
     # # get the ncbi ftp url through the kegg organisms website
     # kegg_url = "http://www.genome.jp/kegg-bin/show_organism?org="
     # print("search in the kegg database\n")
@@ -46,7 +47,6 @@ def download_annotion(kegg_id, anno_path):
     #     local_feature = anno_path + "/" + kegg_id + "_feature.txt.gz"
     #     urllib.request.urlretrieve(url_feature, local_feature, NCBI_API.callback)
     #     os.system("gzip -d " + local_feature)
-    os.system("Rscript scripts/prokaryo_anno_download.R " + kegg_id + " " + anno_path)
     print("keggID:" + kegg_id + " , its annotion files were downloaded in the " + anno_path + "\n")
 
 
