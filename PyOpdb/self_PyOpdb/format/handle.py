@@ -23,7 +23,10 @@ def extract_Synonym(ref_path, result_path):
             rnt_file = item
             synonym = extract_Synonym_sub(ref_path + "/" + rnt_file, synonym)
     # print(len(synoym))
-    f = open(result_path + "/_operons.txt", 'r')
+    for item in os.listdir(result_path):
+        if "operon" in item:
+            operon_file = item
+    f = open(result_path + "/" + operon_file, 'r')
     content = f.read()
     f.close()
     # change like "b0001" to "thrL"
@@ -32,7 +35,7 @@ def extract_Synonym(ref_path, result_path):
         f = open(result_path + "/" + "_operon.txt", 'w')
         f.write(content)
         f.close()
-    os.system("rm " + result_path + "/_operons.txt")
+    os.system("rm " + result_path + "/*_operons.txt")
     print("Operons written to file:\t" + result_path + "_operon.txt")
 
 
