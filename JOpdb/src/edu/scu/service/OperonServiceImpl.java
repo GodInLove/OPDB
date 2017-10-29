@@ -29,8 +29,8 @@ public class OperonServiceImpl implements OperonService{
         if (method.equals("CONDOP")){
             id_method = 1;
         }
-        String path = "/home/yaodongliu/OPDB/PyOpdb/";
-        String cmd = "python3 " + path + "main.py -i " + srr_num +" -o " + path + "test_results -m " + id_method.toString() + " -k " + kegg_id;
+        String path = "/home/lyd/Documents/OPDB/PyOpdb/";
+        String cmd = "python3 " + path + "main.py -i " + srr_num +" -o " + path + "test_results -m " + id_method.toString() + " -k " + kegg_id + " > " + path + srr_num + ".log 2>&1";
         File dir = new File(path);
         try {
             Process process;
