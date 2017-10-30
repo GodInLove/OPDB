@@ -32,6 +32,7 @@ public class OperonServiceImpl implements OperonService{
         String path = "/home/yaodongliu/OPDB/PyOpdb/";
         String cmd = "python3.5 " + path + "main.py -i " + srr_num +" -o " + path + "test_results -m " + id_method.toString() + " -k " + kegg_id + " > " + path + srr_num + ".log 2>&1";
         File dir = new File(path);
+        System.out.println(cmd);
         try {
             Process process;
             process = Runtime.getRuntime().exec(cmd,null,dir);

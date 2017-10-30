@@ -15,7 +15,7 @@
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://localhost:3306/operonDB?charsetEncoding=utf8"/>
         <property name="username" value="root"/>
-        <property name="password" value=""/>
+        <property name="password" value="liu1997912"/>
     </bean>
 
     <!--sessionFactory代理-->
