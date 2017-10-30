@@ -28,7 +28,7 @@
             <h1>OPDB</h1>
             <p>SCU &nbsp;&bull;&nbsp; lyd &nbsp;&bull;&nbsp; operon prediction database</p>
             <nav>
-                <form action="/operon/post.do" method="post" class="">
+                <form action="post.do" method="post" class="">
                     <input id="email" type="text" placeholder="your@email.com" required id = "email" name="emailtext"><br>
                     <hr/>
                     <input id="kegg_id" type="text" placeholder="eco" required id ="kegg_id" name="kegg_idtext"><br>

@@ -16,7 +16,6 @@ import java.io.IOException;
 import java.util.List;
 
 @Controller
-@RequestMapping("/operon")
 public class OperonController {
     private final OperonService operonService;
     private final MailService mailService;
