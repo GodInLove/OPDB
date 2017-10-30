@@ -29,7 +29,7 @@ def extract_Synonym(ref_path, result_path):
             f = open(result_path + "/" + operon_file, 'r')
             content = f.read()
             f.close()
-    # change like "b0001" to "thrL"
+            # change like "b0001" to "thrL"
             for it in synonym:
                 content = content.replace(it[0], it[1])
                 f = open(result_path + "/" + "_operon.txt", 'w')
@@ -60,11 +60,15 @@ def extract_wig(wig_path, gff_path, result_path):
     # remove the "track_name" in wig file
     f = open(wig_path, 'r')
     trash = f.readline()
+    track = f.readline()
+    name = NCBI_API.findall_pat("chrom\=([NC\_0-9\.\|refgi]+)", track)
+    if len(name) == 1:
+        track = re.sub("chrom\=([NC\_0-9\.\|refgi]+)", "chrom=" + chrome[0], track)
     content = f.read()
     f.close()
     os.system("rm " + wig_path)
     f = open(wig_path, 'w')
-    f.write(content)
+    f.write(track + "\n" + content)
     f.close()
     # run the bash to convert wig to bigwig
     tools_path = "/home/lyd/Documents/OPDB/PyOpdb/tools/wigToBigwig"
