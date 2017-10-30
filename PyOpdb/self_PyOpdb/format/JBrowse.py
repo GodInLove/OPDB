@@ -2,7 +2,7 @@ import os
 
 
 def res2jbrowse(ref_path, result_path, srr_n, kegg_id):
-    path = "/var/www/html/OPDB/JBrowse"  # the path of Jbrowse
+    path = "/home/lyd/webapps/JBrowse"  # the path of Jbrowse
     # handle reference sequence .fasta
     os.system("cd " + path + " && bin/prepare-refseqs.pl --fasta " + ref_path + "/*.fna")
     # handle result .bw

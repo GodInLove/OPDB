@@ -19,8 +19,8 @@ def rockhopper_operon_predict(srr_n, layout, kegg_id, process_n, output_path):
                 0] + "/" + srr_n + ".fastq -o " + _dir[2] + " -TIME -SAM")
         # handle some output files to unify format
         extract_Synonym(_dir[1],_dir[2])
-        os.system("rm " + _dir[2] + "/genomeBrowserFiles/_diff*")
-        os.system("mv " + _dir[2] + "/genomeBrowserFiles/_operons.wig " + _dir[2])
+        os.system("rm " + _dir[2] + "/genomeBrowserFiles/*_diff*")
+        os.system("mv " + _dir[2] + "/genomeBrowserFiles/*_operons.wig " + _dir[2])
         gff_path = _dir[1] + "/" + kegg_id + ".gff"
         if os.path.exists(_dir[1] + "/" + kegg_id + "_orgin.gff"):
             os.system("rm " + gff_path)

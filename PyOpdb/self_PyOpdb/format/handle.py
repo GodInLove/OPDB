@@ -26,15 +26,15 @@ def extract_Synonym(ref_path, result_path):
     for item in os.listdir(result_path):
         if "operon" in item:
             operon_file = item
-    f = open(result_path + "/" + operon_file, 'r')
-    content = f.read()
-    f.close()
+            f = open(result_path + "/" + operon_file, 'r')
+            content = f.read()
+            f.close()
     # change like "b0001" to "thrL"
-    for it in synonym:
-        content = content.replace(it[0], it[1])
-        f = open(result_path + "/" + "_operon.txt", 'w')
-        f.write(content)
-        f.close()
+            for it in synonym:
+                content = content.replace(it[0], it[1])
+                f = open(result_path + "/" + "_operon.txt", 'w')
+                f.write(content)
+                f.close()
     os.system("rm " + result_path + "/*_operons.txt")
     print("Operons written to file:\t" + result_path + "_operon.txt")
 
@@ -67,7 +67,7 @@ def extract_wig(wig_path, gff_path, result_path):
     f.write(content)
     f.close()
     # run the bash to convert wig to bigwig
-    tools_path = "/home/yaodongliu/OPDB/PyOpdb/tools/wigToBigwig"
+    tools_path = "/home/lyd/Documents/OPDB/PyOpdb/tools/wigToBigwig"
     # print(tools_path + " " + wig_path + " " + chrome_path + " " + result_path + "/operon.bw")
     os.popen(tools_path + " " + wig_path + " " + chrome_path + " " + result_path + "/operon.bw")
 
