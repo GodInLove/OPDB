@@ -23,5 +23,7 @@ def res2jbrowse(ref_path, result_path, srr_n, kegg_id):
     os.system("cd " + path + " && bin/generate-names.pl -v")
     # move rockhopper result
     os.system("cp " + result_path + "/*txt " + path + "/data/")
+    os.system("mv " + path + "/data/tracks.conf " + path + "/data/tracks.cofn")
     # change name "data" to srr_n
     os.system("cd " + path + " && mv data " + srr_n)
+

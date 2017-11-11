@@ -5,7 +5,7 @@ from self_PyOpdb.tools.sam import samtools, bamCoverage
 
 
 def rockhopper_operon_predict(srr_n, layout, kegg_id, process_n, output_path):
-    _dir = [output_path + srr_n, output_path + kegg_id, output_path + "rockhopper"]
+    _dir = [output_path + srr_n, output_path + kegg_id, output_path + "rockhopper" + srr_n]
     if not os.path.exists(_dir[2]):
         os.system("mkdir " + _dir[2])
         print("running Rockhopper....")
@@ -35,9 +35,9 @@ def operon_predict(srr_n, kegg_id, layout, process_n, method, output_path):
     # rockhopper
     if method == 0:
         rockhopper_operon_predict(srr_n, layout, kegg_id, process_n, output_path)
-        samtools(srr_n, output_path+"rockhopper")
-        bamCoverage(srr_n, output_path+"rockhopper")
-        res2jbrowse( output_path + kegg_id, output_path + "rockhopper"
+        samtools(srr_n, output_path+"rockhopper"+srr_n)
+        bamCoverage(srr_n, output_path+"rockhopper"+srr_n)
+        res2jbrowse( output_path + kegg_id, output_path + "rockhopper"+srr_n
                     ,srr_n,kegg_id)
     # CONDOP
     elif method == 1:
